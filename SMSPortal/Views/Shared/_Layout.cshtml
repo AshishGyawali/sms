@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>@(ViewData["Title"] != null ? ViewData["Title"] : "SMS Portal" )  | Insouece SMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template"
+          name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/images/theme/favicon.ico">
+    @{
+        await Html.RenderPartialAsync("_LayoutCSS");
+    }
+</head>
+
+<body>
+
+    <!-- <body data-layout="horizontal"> -->
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="/images/theme/logo-sm.svg" alt=""
+                                     height="24">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="/images/theme/logo-sm.svg" alt=""
+                                     height="24"> <span class="logo-txt">Minia</span>
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="/images/theme/logo-sm.svg" alt=""
+                                     height="24">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="/images/theme/logo-sm.svg" alt=""
+                                     height="24"> <span class="logo-txt">Minia</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3
+                            font-size-16 header-item" id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                </div>
+                @{await Html.RenderPartialAsync("_navProfileItems");}
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        @{
+            await Html.RenderPartialAsync("_nav");
+        }
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content" id="miniaresult">
+            <div class="content">
+
+                @RenderBody()
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script>
+                        ©
+                        Minia.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by <a href="#!"
+                                                   class="text-decoration-underline">Themesbrand</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    @{
+        await Html.RenderPartialAsync("_Setting");
+    }
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+    @{
+        await Html.RenderPartialAsync("_LayoutJs");
+    }
+    @{
+        await Html.RenderPartialAsync("_applicationJS");
+    }
+    <script>
+        feather.replace()
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

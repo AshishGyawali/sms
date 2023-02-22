@@ -1,0 +1,15 @@
+C:\Users\aashi\source\repos\SMSPortal\SMSData\bin\Debug\net7.0\SMSData.deps.json
+C:\Users\aashi\source\repos\SMSPortal\SMSData\bin\Debug\net7.0\SMSData.dll
+C:\Users\aashi\source\repos\SMSPortal\SMSData\bin\Debug\net7.0\SMSData.pdb
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.csproj.AssemblyReference.cache
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.AssemblyInfoInputs.cache
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.AssemblyInfo.cs
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.csproj.CoreCompileInputs.cache
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.dll
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\refint\SMSData.dll
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.pdb
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\ref\SMSData.dll
+C:\Users\aashi\source\repos\SMSPortal\SMSData\bin\Debug\net7.0\Utility.dll
+C:\Users\aashi\source\repos\SMSPortal\SMSData\bin\Debug\net7.0\Utility.pdb
+C:\Users\aashi\source\repos\SMSPortal\SMSData\obj\Debug\net7.0\SMSData.csproj.CopyComplete
