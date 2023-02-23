@@ -3,7 +3,7 @@
         $('#gridContainer').dxDataGrid({
             dataSource: "/group/getsubgroups/",
             paging: {
-                pageSize: 10,
+                pageSize: 25,
             },
             pager: {
                 showPageSizeSelector: true,
@@ -14,9 +14,9 @@
                 visible: true,
                 highlightCaseSensitive: true,
             },
-            groupPanel: { visible: false },
+            groupPanel: { visible: true },
             grouping: {
-                autoExpandAll: false,
+                autoExpandAll: true,
             },
             allowColumnReordering: true,
             rowAlternationEnabled: true,
@@ -84,26 +84,9 @@
             },
             onShowing: function (e) {
 
-                let ctx = $('#add-subgroup');
                 templateManager.getTemplete("group/create-subgroup").then(x => {
+                    let ctx = $('#add-subgroup');
                     ctx.html(x);
-
-
-                    $('#createSubGroup').on('submit',  function (e) {
-                        e.preventDefault();
-                        $.ajax({
-                            type: 'POST',
-                            url: "/group/savesubgroup",
-                            data: ($('#createSubGroup').serialize()),
-                            success: function () {
-                                addSubGroupPopup.hide();
-                                $('#gridContainer').dxDataGrid('instance').refresh();
-                                showSuccessMessage((data) ? "Sub-Group updated successfully" : "Sub-Group added successfully");
-                            }
-                        });
-                    })
-
-
                     $('#Id', ctx).val(data ? data.Id : 0);
                     $('#groupId').dxSelectBox({
                         dataSource: appStore.get('groups'),
@@ -114,14 +97,19 @@
                         valueExpr: 'Id',
                         label: "Group Name",
                         labelMode: "static",
+                        onEnterKey: function() {
+                            $('#createSubGroup').submit();
+                        }
                     });
 
                     $('#Name', ctx).dxTextBox({
                         name: 'Name',
                         label: "Sub-Group Name",
-                        value: data ? data.Name : null
-                    })
-                        .dxValidator({
+                        value: data ? data.Name : null,
+                        onEnterKey() {
+                            $('#createSubGroup').submit();
+                        }
+                    }).dxValidator({
                         validationGroup: valGroup,
                         validationRules: [{
                             type: "required",
@@ -144,9 +132,15 @@
                         }]
                     });
 
-
+                    $('#createSubGroup', ctx).submitPopupForm({
+                        url: "/group/savesubgroup",
+                        method: 'POST',
+                        submitBtn: $('#submitSubGroup').dxButton('instance'),
+                        popup: addSubGroupPopup,
+                        refreshGrid: $('#gridContainer').dxDataGrid('instance'),
+                        validationGroup: valGroup
+                        });
                 })
-
             },
             width: 500,
             minHeight: 300,
@@ -181,16 +175,13 @@
                     stylingMode: 'contained',
                     type: 'default',
                     width: 150,
-                    useDefaultBehaviour: true,
                     validationGroup: valGroup,
-                    onClick(e) {
-                        let res = (e.validationGroup.validate());
-                        res.status === "pending" && res.complete.then((r) => {
-                            if (r.status == 'valid') {
-                                $('#createSubGroup').submit();
-                            }
-                        });
+                    onContentReady: function (e) {
+                        e.element[0].id = "submitGroup";
                     },
+                    onClick() {
+                        $('#createSubGroup').submit();
+                    }
                 },
             }],
         }).dxPopup('instance');

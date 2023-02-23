@@ -1,635 +1,635 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\SMSPortal.bundle.scp.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\SMSPortal.bundle.scp.css",
       "PackagePath": "staticwebassets\\SMSPortal.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\custom\\custom-datagrid.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\custom\\custom-datagrid.css",
       "PackagePath": "staticwebassets\\css\\custom\\custom-datagrid.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxicons.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxicons.ttf",
       "PackagePath": "staticwebassets\\css\\custom\\icons\\dxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxicons.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxicons.woff",
       "PackagePath": "staticwebassets\\css\\custom\\icons\\dxicons.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxicons.woff2",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxicons.woff2",
       "PackagePath": "staticwebassets\\css\\custom\\icons\\dxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxiconsmaterial.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxiconsmaterial.ttf",
       "PackagePath": "staticwebassets\\css\\custom\\icons\\dxiconsmaterial.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxiconsmaterial.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxiconsmaterial.woff",
       "PackagePath": "staticwebassets\\css\\custom\\icons\\dxiconsmaterial.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxiconsmaterial.woff2",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\custom\\icons\\dxiconsmaterial.woff2",
       "PackagePath": "staticwebassets\\css\\custom\\icons\\dxiconsmaterial.woff2"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.eot",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\css\\fonts\\boxicons.eot"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.svg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.svg",
       "PackagePath": "staticwebassets\\css\\fonts\\boxicons.svg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\css\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\css\\fonts\\boxicons.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.woff2",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\css\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.eot",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.eot",
       "PackagePath": "staticwebassets\\css\\fonts\\dripicons-v2.eot"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.svg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.svg",
       "PackagePath": "staticwebassets\\css\\fonts\\dripicons-v2.svg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.ttf",
       "PackagePath": "staticwebassets\\css\\fonts\\dripicons-v2.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\dripicons-v2.woff",
       "PackagePath": "staticwebassets\\css\\fonts\\dripicons-v2.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.eot",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-brands-400.eot"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.svg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-brands-400.svg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-brands-400.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.woff2",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.eot",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-regular-400.eot"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.svg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-regular-400.svg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-regular-400.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.woff2",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.eot",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-solid-900.eot"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.svg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-solid-900.svg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-solid-900.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.woff2",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\css\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.eot",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.eot",
       "PackagePath": "staticwebassets\\css\\fonts\\materialdesignicons-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.ttf",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.ttf",
       "PackagePath": "staticwebassets\\css\\fonts\\materialdesignicons-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.woff",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.woff",
       "PackagePath": "staticwebassets\\css\\fonts\\materialdesignicons-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.woff2",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\fonts\\materialdesignicons-webfont.woff2",
       "PackagePath": "staticwebassets\\css\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\site.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\app.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\app.css",
       "PackagePath": "staticwebassets\\css\\theme\\app.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\app.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\app.min.css",
       "PackagePath": "staticwebassets\\css\\theme\\app.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\bootstrap.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\bootstrap.css",
       "PackagePath": "staticwebassets\\css\\theme\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\bootstrap.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\theme\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\custom.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\custom.css",
       "PackagePath": "staticwebassets\\css\\theme\\custom.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\icons.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\icons.css",
       "PackagePath": "staticwebassets\\css\\theme\\icons.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\icons.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\icons.min.css",
       "PackagePath": "staticwebassets\\css\\theme\\icons.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\preloader.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\preloader.css",
       "PackagePath": "staticwebassets\\css\\theme\\preloader.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\css\\theme\\preloader.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\css\\theme\\preloader.min.css",
       "PackagePath": "staticwebassets\\css\\theme\\preloader.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\favicon.ico",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\auth-bg.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\auth-bg.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\auth-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\bg-1.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\bg-1.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\bg-1.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\bg-2.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\bg-2.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\bg-2.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\bg-3.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\bg-3.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\bg-3.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\brands\\bitbucket.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\brands\\bitbucket.png",
       "PackagePath": "staticwebassets\\images\\theme\\brands\\bitbucket.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\brands\\dribbble.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\brands\\dribbble.png",
       "PackagePath": "staticwebassets\\images\\theme\\brands\\dribbble.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\brands\\dropbox.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\brands\\dropbox.png",
       "PackagePath": "staticwebassets\\images\\theme\\brands\\dropbox.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\brands\\github.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\brands\\github.png",
       "PackagePath": "staticwebassets\\images\\theme\\brands\\github.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\brands\\mail_chimp.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\brands\\mail_chimp.png",
       "PackagePath": "staticwebassets\\images\\theme\\brands\\mail_chimp.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\brands\\slack.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\brands\\slack.png",
       "PackagePath": "staticwebassets\\images\\theme\\brands\\slack.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\error-img.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\error-img.png",
       "PackagePath": "staticwebassets\\images\\theme\\error-img.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\favicon.ico",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\theme\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\french.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\french.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\french.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\germany.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\germany.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\germany.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\italy.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\italy.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\italy.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\russia.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\russia.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\russia.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\ak.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\ak.png",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\select2\\ak.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\ca.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\ca.png",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\select2\\ca.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\hi.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\hi.png",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\select2\\hi.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\nv.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\nv.png",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\select2\\nv.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\or.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\or.png",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\select2\\or.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\wa.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\select2\\wa.png",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\select2\\wa.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\spain.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\spain.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\spain.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\flags\\us.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\flags\\us.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\flags\\us.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\giftbox.png",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\giftbox.png",
       "PackagePath": "staticwebassets\\images\\theme\\giftbox.png"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\logo-sm.svg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\logo-sm.svg",
       "PackagePath": "staticwebassets\\images\\theme\\logo-sm.svg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-1.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-1.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\small\\img-1.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-2.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-2.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\small\\img-2.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-3.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-3.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\small\\img-3.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-4.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-4.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\small\\img-4.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-5.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-5.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\small\\img-5.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-6.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-6.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\small\\img-6.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-7.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\small\\img-7.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\small\\img-7.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\undraw-calendar.svg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\undraw-calendar.svg",
       "PackagePath": "staticwebassets\\images\\theme\\undraw-calendar.svg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-1.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-1.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-1.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-10.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-10.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-10.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-2.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-2.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-2.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-3.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-3.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-3.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-4.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-4.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-4.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-5.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-5.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-5.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-6.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-6.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-6.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-7.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-7.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-7.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-8.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-8.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-8.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-9.jpg",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\users\\avatar-9.jpg",
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-9.jpg"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\custom\\forgot-password.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\forgot-password.js",
       "PackagePath": "staticwebassets\\js\\custom\\forgot-password.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\custom\\groups.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\groups.js",
       "PackagePath": "staticwebassets\\js\\custom\\groups.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\custom\\subgroups.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\subgroups.js",
       "PackagePath": "staticwebassets\\js\\custom\\subgroups.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\helper\\Utility.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\helper\\Utility.js",
       "PackagePath": "staticwebassets\\js\\helper\\Utility.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\helper\\templateManager.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\helper\\templateManager.js",
       "PackagePath": "staticwebassets\\js\\helper\\templateManager.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\site.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\theme\\ajax.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\theme\\ajax.js",
       "PackagePath": "staticwebassets\\js\\theme\\ajax.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\js\\theme\\app.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\theme\\app.js",
       "PackagePath": "staticwebassets\\js\\theme\\app.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\template\\group\\create-subgroup.html",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\group\\create-subgroup.html",
       "PackagePath": "staticwebassets\\template\\group\\create-subgroup.html"
     },
     {
-      "Id": "C:\\Users\\aashi\\source\\repos\\SMSPortal\\SMSPortal\\wwwroot\\template\\group\\create.html",
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\group\\create.html",
       "PackagePath": "staticwebassets\\template\\group\\create.html"
     },
     {

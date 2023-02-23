@@ -3,7 +3,7 @@
         $('#gridContainer').dxDataGrid({
             dataSource: "/group/getgroups/",
             paging: {
-                pageSize: 10,
+                pageSize: 25,
             },
             pager: {
                 showPageSizeSelector: true,
@@ -110,25 +110,15 @@
                         }]
                     });
 
-                    $('#createGroup', ctx).on('submit', function (e) {
-                        e.preventDefault();
-                        const res = DevExpress.validationEngine.validateGroup(valGroup);
-                        res.status === "pending" && res.complete.then((r) => {
-                            if (r.status == 'valid') {
-                                $.ajax({
-                                    type: 'POST',
-                                    url: "/group/savegroup",
-                                    data: ($('#createGroup').serialize()),
-                                    success: function () {
-                                        addGroupPopup.hide();
-                                        $('#gridContainer').dxDataGrid('instance').refresh();
-                                        showSuccessMessage((data) ? "Group updated successfully" : "Group added successfully");
-                                    }
-                                });
-                            }
+
+                    $('#createGroup', ctx).submitPopupForm({
+                        url: "/group/savegroup",
+                        method: 'POST',
+                        submitBtn: $('#submitGroup').dxButton('instance'),
+                        popup: addGroupPopup,
+                        refreshGrid: $('#gridContainer').dxDataGrid('instance'),
+                        validationGroup: valGroup
                         });
-                        
-                    })
 
                 })
 
@@ -166,8 +156,13 @@
                     stylingMode: 'contained',
                     type: 'default',
                     width: 150,
-                    useSubmitBehaviour: true,
                     validationGroup: valGroup,
+                    onContentReady: function (e) {
+                        e.element[0].id = "submitGroup";
+                    },
+                    onClick() {
+                        $('#createGroup').submit();
+                    }
                 },
             }],
         }).dxPopup('instance');

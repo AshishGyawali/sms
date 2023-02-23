@@ -10,3 +10,15 @@ C:\Users\aashi\source\repos\SMSPortal\Utility\obj\Debug\net7.0\Utility.dll
 C:\Users\aashi\source\repos\SMSPortal\Utility\obj\Debug\net7.0\refint\Utility.dll
 C:\Users\aashi\source\repos\SMSPortal\Utility\obj\Debug\net7.0\Utility.pdb
 C:\Users\aashi\source\repos\SMSPortal\Utility\obj\Debug\net7.0\ref\Utility.dll
+D:\SMSPortal\smsportal\Utility\bin\Debug\net7.0\Utility.deps.json
+D:\SMSPortal\smsportal\Utility\bin\Debug\net7.0\Utility.dll
+D:\SMSPortal\smsportal\Utility\bin\Debug\net7.0\Utility.pdb
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\Utility.csproj.AssemblyReference.cache
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\Utility.AssemblyInfoInputs.cache
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\Utility.AssemblyInfo.cs
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\Utility.csproj.CoreCompileInputs.cache
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\Utility.dll
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\refint\Utility.dll
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\Utility.pdb
+D:\SMSPortal\smsportal\Utility\obj\Debug\net7.0\ref\Utility.dll
