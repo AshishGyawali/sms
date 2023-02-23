@@ -45,7 +45,7 @@
                     cellTemplate: function (container, options) {
                         $('<a />').attr('href', 'javascript:void(0)').on('click', function (e) {
                             subgroups.addNew(options.data);
-                        }).text('Edit').appendTo(container);
+                        }).text('Edit').appendTo(container); 
                     }
                 },
             ],
