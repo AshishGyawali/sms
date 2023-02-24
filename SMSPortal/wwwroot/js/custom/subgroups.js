@@ -96,6 +96,7 @@
                         searchEnabled: true,
                         valueExpr: 'Id',
                         label: "Group Name",
+                        value: data ? data.GroupId : null,
                         labelMode: "static",
                         onEnterKey: function() {
                             $('#createSubGroup').submit();

@@ -20,7 +20,7 @@
                     $.ajax({
                         type: "POST",
                         url: "/datastore/getdata",
-                        data: { id: key},
+                        data: { id: key, name: name },
                         success: function (res) {
                             d.resolve(res);
                         }

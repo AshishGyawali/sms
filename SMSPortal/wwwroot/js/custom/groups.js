@@ -24,7 +24,11 @@
             columns: [
                 {
                     dataField: 'Name',
-                    caption: 'Group Name'
+                    caption: 'Group Name',
+                    cellTemplate: function (container, options) {
+                        let data = options.data;
+                        container.append(data.Name + '<span class = "no-of-subgroup">('+data.SubgroupCount+' subgroups)</span>');
+                    }
                 },
                 {
                     dataField: 'CreatedDate',

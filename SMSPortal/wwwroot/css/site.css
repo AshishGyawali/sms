@@ -34,3 +34,11 @@ body {
     font-size: 15px !important;
     font-weight: 600;
 }
+
+.no-of-subgroup {
+    float:right;
+    margin-right:10px;
+    color: #5156be;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}

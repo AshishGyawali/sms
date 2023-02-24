@@ -17,6 +17,7 @@ namespace SMSData.Models.Groups
         public int Id { get; set; }
         public int ClientId { get; set; }
         public string Name { get; set; }
+        public int SubgroupCount { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
     }

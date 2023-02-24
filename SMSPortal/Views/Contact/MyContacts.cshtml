@@ -1,16 +1,18 @@
-﻿@{
-    ViewData["Title"] = "My Subgroups";
+﻿
+@{
+    ViewData["Title"] = "MyContacts";
 }
 
-<h1>My Subgroups</h1>
+<h1>MyContacts</h1>
+
 <div class="demo-container">
     <div id="gridContainer"></div>
 </div>
-
 @section Scripts{
+    <script src="/js/custom/contacts.js"></script>
     <script>
         $(function () {
-            subgroups.init();
+            contacts.init();
         })
     </script>
     }

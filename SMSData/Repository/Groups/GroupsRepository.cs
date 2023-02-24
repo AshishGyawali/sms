@@ -68,5 +68,6 @@ namespace SMSData.Repository.Groups
             var res = await _db.ExecuteDataTableAsync(query, CommandType.Text, pram);
             return res.Rows.Count == 0;
         }
+        
     }
 }

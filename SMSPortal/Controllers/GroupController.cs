@@ -23,6 +23,8 @@ namespace SMSPortal.Controllers
         {
             return View();
         }
+
+        [HttpPost]
         public async Task<IActionResult> SaveGroup(GroupsViewModel model)
         {
 
@@ -58,6 +60,8 @@ namespace SMSPortal.Controllers
         {
             return View();
         }
+
+        [HttpPost]
         public async Task<IActionResult> SaveSubGroup(SubGroupsViewModel model)
         {
 
