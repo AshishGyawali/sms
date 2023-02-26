@@ -30,7 +30,7 @@ namespace SMSPortal.Controllers
 
             if (ModelState.IsValid)
             {
-                var data = await _gropusRepo.validateGroup(model.Name, model.Id);
+                var data = await _gropusRepo.ValidateGroup(model.Name, model.Id);
                 if(data)
                 {
                     var response = await _gropusRepo.SaveGroup(model);
@@ -52,7 +52,7 @@ namespace SMSPortal.Controllers
 
         public async Task<IActionResult> validateGroup(string groupName, int Id)
         {
-            var data = await _gropusRepo.validateGroup(groupName, Id);
+            var data = await _gropusRepo.ValidateGroup(groupName, Id);
             return Ok(data);
         }
 
@@ -67,7 +67,7 @@ namespace SMSPortal.Controllers
 
             if (ModelState.IsValid)
             {
-                var data = await _gropusRepo.validateSubGroup(model.Name, model.Id);
+                var data = await _gropusRepo.ValidateSubGroup(model.Name, model.Id);
                 if (data)
                 {
                     var response = await _gropusRepo.SaveSubGroup(model);
@@ -90,9 +90,10 @@ namespace SMSPortal.Controllers
 
         public async Task<IActionResult> validateSubGroup(string subGroupName, int Id)
         {
-            var data = await _gropusRepo.validateSubGroup(subGroupName, Id);
+            var data = await _gropusRepo.ValidateSubGroup(subGroupName, Id);
             return Ok(data);
         }
+
     }
 
 }

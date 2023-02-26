@@ -30,7 +30,7 @@ namespace SMSPortal.Controllers
 
             if (ModelState.IsValid)
             {
-                var data = await _contactRepo.validateContact(model.FullName, model.Id);
+                var data = await _contactRepo.validateContact(model.Contact, model.Id);
                 if (data)
                 {
                     var response = await _contactRepo.SaveContact(model);

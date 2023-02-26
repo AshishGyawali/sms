@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OEDR9F+Op3QYVD7U4OoFwacdTu50J7QvXk2FHubBZUg=",
+  "Hash": "tVHJWW3vC2PEk4ukgv7oeU44pF0ID3GD8mOowWQqjwo=",
   "Source": "SMSPortal",
   "BasePath": "_content/SMSPortal",
   "Mode": "Default",
@@ -2701,6 +2701,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\Contact\\create-contact.html",
+      "SourceId": "SMSPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\",
+      "BasePath": "_content/SMSPortal",
+      "RelativePath": "template/Contact/create-contact.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\Contact\\create-contact.html"
     },
     {
       "Identity": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\group\\create.html",

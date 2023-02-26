@@ -629,6 +629,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\Contact\\create-contact.html",
+      "PackagePath": "staticwebassets\\template\\Contact\\create-contact.html"
+    },
+    {
       "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\group\\create-subgroup.html",
       "PackagePath": "staticwebassets\\template\\group\\create-subgroup.html"
     },

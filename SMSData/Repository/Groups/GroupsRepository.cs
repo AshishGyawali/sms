@@ -35,7 +35,7 @@ namespace SMSData.Repository.Groups
             return await _db.ExecuteNonQueryAsync("spSaveGroups", CommandType.StoredProcedure, pram);
         }
 
-        public async Task<bool> validateGroup(string groupName, int id)
+        public async Task<bool> ValidateGroup(string groupName, int id)
         {
             var query = "SELECT 1 FROM dbo.Gropus WHERE [Name] = @Name AND ClientId = @ClientId AND Id <> @Id;";
             var pram = new List<SqlParameter>()
@@ -58,7 +58,7 @@ namespace SMSData.Repository.Groups
             return await _db.ExecuteNonQueryAsync("spSaveSubGroup", CommandType.StoredProcedure, pram);
         }
 
-        public async Task<bool> validateSubGroup(string subGroupName, int id)
+        public async Task<bool> ValidateSubGroup(string subGroupName, int id)
         {
             var query = "SELECT 1 FROM dbo.Subgroup WHERE [Name] = @Name AND ClientId = @ClientId AND Id <> @Id;";
             var pram = new List<SqlParameter>()
@@ -68,6 +68,7 @@ namespace SMSData.Repository.Groups
             var res = await _db.ExecuteDataTableAsync(query, CommandType.Text, pram);
             return res.Rows.Count == 0;
         }
-        
+
+
     }
 }

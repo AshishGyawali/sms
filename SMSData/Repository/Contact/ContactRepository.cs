@@ -34,11 +34,11 @@ namespace SMSData.Repository.Contact
             return await _db.ExecuteNonQueryAsync("spSaveContacts", CommandType.StoredProcedure, pram);
         }
 
-        public async Task<bool> validateContact(string contactName, int id)
+        public async Task<bool> validateContact(string contact, int id)
         {
-            var query = "SELECT 1 FROM dbo.Gropus WHERE [Name] = @Name AND ClientId = @ClientId AND Id <> @Id;";
+            var query = "SELECT 1 FROM dbo.Contacts WHERE [Contact] = @Contact AND ClientId = @ClientId AND Id <> @Id;";
             var pram = new List<SqlParameter>()
-            .AddParam("Name", contactName)
+            .AddParam("Contact", contact)
             .AddParam("Id", id)
             .AddParam("ClientId", SessionData.CurrentUser.ClientId);
             var res = await _db.ExecuteDataTableAsync(query, CommandType.Text, pram);

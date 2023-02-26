@@ -58,12 +58,28 @@
                         location: 'after',
                         widget: 'dxButton',
                         options: {
+                            text: 'Import',
+                            icon: 'xlsfile',
+                            stylingMode: 'contained',
+                            type: 'success',
+                            width: 150,
+                            onContentReady: function (e) {
+                                e.element[0].id = "importContact";
+                            },
+                            onClick() {
+                                contacts.importContact();
+                            }
+                        },
+                    }, {
+                        location: 'after',
+                        widget: 'dxButton',
+                        options: {
                             icon: 'plus',
                             width: 150,
                             text: 'Add Contact',
                             type: "default",
                             onClick() {
-                               // subgroups.addNew();
+                                contacts.addNew();
                             }
                         },
                     }, 'searchPanel',
@@ -80,7 +96,7 @@
         let div = $("#addContactPopup");
 
         let valGroup = 'CreateContact';
-        const addSubGroupPopup = div.dxPopup({
+        const addContactPopup = div.dxPopup({
             contentTemplate: function (c) {
 
                 c.append("<div id = 'add-contact'></div>");
@@ -101,24 +117,14 @@
                         label: "Group Name",
                         labelMode: "static",
                         onValueChanged(data) {
-                            $.ajax({
-                                type: 'GET',
-                                url: "/group/getSubgroupByGroupId",
-                                data: {
-                                    groupId: data.value
-                                },
-                                success: function (resultData) {
-                                    $('#subgroupName').dxSelectBox('instance').option('dataSource', resultData)
-                                },
-                                error: function (resultData) { alert(resultData.Message) }
-                            });
+                            $('#subgroupId').dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
                         },
                         onEnterKey: function () {
                             $('#createContact').submit();
                         }
                     });
-                    $('#subgroupName').dxSelectBox({
-                        dataSource: appStore.get('subgroups'),
+                    $('#subgroupId').dxSelectBox({
+                        dataSource: [],
                         name: 'SubGroupId',
                         displayExpr: 'Name',
                         showClearButton: true,
@@ -186,7 +192,7 @@
                     })
 
                     $('#createContact', ctx).submitPopupForm({
-                        url: "/group/savecontact",
+                        url: "/contact/savecontact",
                         method: 'POST',
                         submitBtn: $('#submitContact').dxButton('instance'),
                         popup: addContactPopup,
@@ -195,11 +201,11 @@
                     });
                 })
             },
-            width: 500,
-            minHeight: 300,
+            width: 550,
+            minHeight: 400,
             height: 'auto',
             showTitle: true,
-            title: data ? 'Edit Sub-Group (' + data.Name + ')' : 'Create new sub-group',
+            title: 'Add new contact',
             visible: true,
             dragEnabled: false,
             hideOnOutsideClick: true,
@@ -215,9 +221,27 @@
                     type: 'danger',
                     width: 150,
                     onClick() {
-                        addSubGroupPopup.hide();
+                        addContactPopup.hide();
                     },
                 },
+            }, {
+                widget: 'dxButton',
+                toolbar: 'bottom',
+                location: 'after',
+                options: {
+                    text: 'Import',
+                    icon: 'xlsfile',
+                    stylingMode: 'contained',
+                    type: 'success',
+                    width: 150,
+                    validationGroup: valGroup,
+                    onContentReady: function (e) {
+                        e.element[0].id = "importContact";
+                    },
+                    onClick() {
+                        alert('hey');
+                    }
+                }
             }, {
                 widget: 'dxButton',
                 toolbar: 'bottom',
@@ -230,10 +254,93 @@
                     width: 150,
                     validationGroup: valGroup,
                     onContentReady: function (e) {
-                        e.element[0].id = "submitGroup";
+                        e.element[0].id = "submitContact";
                     },
                     onClick() {
-                        $('#createSubGroup').submit();
+                        $('#createContact').submit();
+                    }
+                },
+            }],
+        }).dxPopup('instance');
+    },
+
+
+     importContact: function (data) {
+         if ($("#importContactPopup").length == 0) {
+
+            $("<div />").attr("id", "importContactPopup").appendTo("body")
+        }
+        let div = $("#importContactPopup");
+
+         let valGroup = 'importContact';
+        const addContactPopup = div.dxPopup({
+            contentTemplate: function (c) {
+
+                c.append("<div id = 'import-contact'></div>");
+            },
+            onShowing: function (e) {
+
+                templateManager.getTemplete("contact/import-contact").then(x => {
+                    let ctx = $('#import-contact');
+                    ctx.html(x);
+                    $('#ExcelFile').dxFileUploader({
+                        selectButtonText: 'Select File',
+                        dropZone: '.drop-div',
+                        name: 'File',
+                        labelText: '',
+                        accept: 'image/*',
+                        uploadMode: 'useForm',
+                    });
+
+                    $('#importContact', ctx).submitPopupForm({
+                        url: "/contact/importcontact",
+                        method: 'POST',
+                        submitBtn: $('#importContact').dxButton('instance'),
+                        popup: addContactPopup,
+                        refreshGrid: $('#gridContainer').dxDataGrid('instance'),
+                        validationGroup: valGroup
+                    });
+                })
+            },
+            width: 550,
+            minHeight: 400,
+            height: 'auto',
+            showTitle: true,
+            title: 'Import Contacts',
+            visible: true,
+            dragEnabled: false,
+            hideOnOutsideClick: true,
+            showCloseButton: false,
+            toolbarItems: [{
+                widget: 'dxButton',
+                toolbar: 'bottom',
+                location: 'before',
+                options: {
+                    text: 'Close',
+                    icon: 'fa-solid fa-circle-xmark',
+                    stylingMode: 'outlined',
+                    type: 'danger',
+                    width: 150,
+                    onClick() {
+                        addContactPopup.hide();
+                    },
+                },
+            }, {
+                widget: 'dxButton',
+                toolbar: 'bottom',
+                location: 'after',
+                options: {
+                    text: 'Import',
+                    icon: 'check',
+                    stylingMode: 'contained',
+                    type: 'default',
+                    width: 150,
+                    validationGroup: valGroup,
+                    onContentReady: function (e) {
+                        e.element[0].id = "submitContact";
+                    },
+                    onClick() {
+                        $('#importContact').submit();
                     }
                 },
             }],

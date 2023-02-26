@@ -18,13 +18,14 @@ namespace SMSData.Repository.Utility
             _db = database;
         }
 
-        public async Task<DataTable> GetData(string name, string searchKey, int take, int skip, int? id)
+        public async Task<DataTable> GetData(string name, string searchKey, int take, int skip, int? id, int? parentId)
         {
             var pram = new List<SqlParameter>()
              .AddParam("Name", name)
              .AddParam("searchKey", searchKey)
              .AddParam("take", take)
              .AddParam("id", id)
+             .AddParam("parentId", parentId)
              .AddParam("ClientId", SessionData.CurrentUser.ClientId)
              .AddParam("skip", skip);
             return await _db.ExecuteDataTableAsync("masterData_get_sp",CommandType.StoredProcedure,pram);
