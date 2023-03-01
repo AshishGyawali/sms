@@ -1,5 +1,8 @@
 ﻿let templateManager = {
     getTemplete: function (name) {
-        return $.get("/template/" + name + ".html");
+        return $.ajax({
+            cache: false,
+            url: "/template/" + name + ".html"
+        });
     }
 };

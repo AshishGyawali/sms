@@ -544,3 +544,5 @@ D:\SMSPortal\smsportal\SMSPortal\obj\Debug\net7.0\refint\SMSPortal.dll
 D:\SMSPortal\smsportal\SMSPortal\obj\Debug\net7.0\SMSPortal.pdb
 D:\SMSPortal\smsportal\SMSPortal\obj\Debug\net7.0\SMSPortal.genruntimeconfig.cache
 D:\SMSPortal\smsportal\SMSPortal\obj\Debug\net7.0\ref\SMSPortal.dll
+D:\SMSPortal\smsportal\SMSPortal\bin\Debug\net7.0\ExcelDataReader.dll
+D:\SMSPortal\smsportal\SMSPortal\bin\Debug\net7.0\ExcelDataReader.DataSet.dll

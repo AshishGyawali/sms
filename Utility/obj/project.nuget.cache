@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8D/DJbksqvlSfy513n4d8OFxrEkTCQ5khLNPeQBktTHn9I/AW9bFj9IIQkTXv7vDayNX5I44t5v0Q3kzzTpTcw==",
+  "dgSpecHash": "itdEgiL3iHqs887Nhs7q/hEQsSdiH23XB74oBnR0of6ZC2Cqod8ezpuCo8CKqnf2n1wWatdL2myob8o8lUc4Yg==",
   "success": true,
   "projectFilePath": "D:\\SMSPortal\\smsportal\\Utility\\Utility.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aashi\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\aashi\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\aashi\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\aashi\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
     "C:\\Users\\aashi\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.9\\microsoft.aspnet.webpages.3.2.9.nupkg.sha512",

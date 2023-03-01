@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1PSBk9Pn/k7/Jk6m2FeEeUcVwYCjSY/hQH3TCwS1dhzb35mD60RqQbVrUTWlYo0n+jqPrHPC6hh2KOp3mjQpww==",
+  "dgSpecHash": "10cK5h2HOPpcAoV7YJJHakaQfT8aO1pr3uyD4OVwsYblNpPIi1gSu0Vn8Tpgp2t+efqfbg6D9B8ZZpE5u1cnig==",
   "success": true,
   "projectFilePath": "D:\\SMSPortal\\smsportal\\SMSData\\SMSData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aashi\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\aashi\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\aashi\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\aashi\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
     "C:\\Users\\aashi\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\aashi\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",

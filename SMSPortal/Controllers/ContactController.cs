@@ -4,6 +4,7 @@ using SMSData.Models.Contact;
 using SMSData.Models.Groups;
 using SMSData.Repository.Auth;
 using SMSData.Repository.Contact;
+using System.Data;
 using Utility;
 
 namespace SMSPortal.Controllers
@@ -48,6 +49,35 @@ namespace SMSPortal.Controllers
         {
             var data = await _contactRepo.GetContactList();
             return Ok(data);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ImportContact(IFormFile ContactFile)
+        {
+
+            if (ModelState.IsValid)
+            {
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/files/contactfiles");
+
+                //create folder if not exist
+                if (!Directory.Exists(path))
+                    Directory.CreateDirectory(path);
+                string fileName = Guid.NewGuid().ToString() + "_" + ContactFile.FileName;
+                string fileNameWithPath = Path.Combine(path, fileName);
+                using (var stream = new FileStream(fileNameWithPath, FileMode.Create))
+                {
+                    ContactFile.CopyTo(stream);
+                }
+                DataSet contacts = ExcelToDatatable.BeforeAllTests(fileNameWithPath);
+                if (contacts != null && contacts.Tables.Count > 0)
+                {
+                    return Ok(contacts.Tables[0]);
+                }
+                return Ok(null);
+
+
+            }
+            return BadRequest(new DbResponse() { HasError = true, Message = ModelState.GetError() });
         }
     }
 }

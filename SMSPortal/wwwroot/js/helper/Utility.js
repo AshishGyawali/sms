@@ -37,7 +37,7 @@
 (function ($) {
     $.fn.submitPopupForm = function (options) {
         let form = $(this);
-
+        
         form.on('submit', function (e) {
             e.preventDefault();
             if (!options.url) {
@@ -49,6 +49,7 @@
             let popup = options.popup;
             let refreshGrid = options.refreshGrid;
             let valgroup = options.validationGroup;
+            console.log(form);
             var formData = new FormData(form[0]);
             let ajaxoptions = {
                 type: method,

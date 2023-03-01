@@ -265,14 +265,14 @@
     },
 
 
-     importContact: function (data) {
-         if ($("#importContactPopup").length == 0) {
+    importContact: function (data) {
+        if ($("#importContactPopup").length == 0) {
 
             $("<div />").attr("id", "importContactPopup").appendTo("body")
         }
         let div = $("#importContactPopup");
 
-         let valGroup = 'importContact';
+        let valGroup = 'importContact';
         const addContactPopup = div.dxPopup({
             contentTemplate: function (c) {
 
@@ -283,22 +283,21 @@
                 templateManager.getTemplete("contact/import-contact").then(x => {
                     let ctx = $('#import-contact');
                     ctx.html(x);
-                    $('#ExcelFile').dxFileUploader({
-                        selectButtonText: 'Select File',
-                        dropZone: '.drop-div',
-                        name: 'File',
-                        labelText: '',
-                        accept: 'image/*',
-                        uploadMode: 'useForm',
-                    });
 
-                    $('#importContact', ctx).submitPopupForm({
+                    //$('#importContact').on('submit', function (e) {
+                    //    e.preventDefault();
+                        
+                    //})
+
+                    $('#importContactFile').submitPopupForm({
                         url: "/contact/importcontact",
                         method: 'POST',
                         submitBtn: $('#importContact').dxButton('instance'),
-                        popup: addContactPopup,
-                        refreshGrid: $('#gridContainer').dxDataGrid('instance'),
-                        validationGroup: valGroup
+                        hideSuccessMessage: true,
+                        success: function (res) {
+                            contacts.showImportedContact(res);
+                            addContactPopup.hide();
+                        },
                     });
                 })
             },
@@ -335,15 +334,105 @@
                     stylingMode: 'contained',
                     type: 'default',
                     width: 150,
-                    validationGroup: valGroup,
                     onContentReady: function (e) {
                         e.element[0].id = "submitContact";
                     },
                     onClick() {
-                        $('#importContact').submit();
+                        console.log('hey');
+                        $('#importContactFile').submit();
                     }
                 },
             }],
         }).dxPopup('instance');
-    }
+    },
+
+    showImportedContact: function (data) {
+        if ($("#showImportedContactPopup").length == 0) {
+
+            $("<div />").attr("id", "showImportedContactPopup").appendTo("body")
+        }
+        let div = $("#showImportedContactPopup");
+        const showImportedContactPopup = div.dxPopup({
+            contentTemplate: function (c) {
+                $('<div />').dxDataGrid({
+                    dataSource: data,
+                    paging: {
+                        pageSize: 25,
+                    },
+                    pager: {
+                        showPageSizeSelector: true,
+                        allowedPageSizes: [10, 25, 50, 100],
+                    },
+                    editing: {
+                        mode: 'cell',
+                        allowUpdating: true,
+                        allowDeleting: true,
+                    },
+                    remoteOperations: false,
+                    searchPanel: {
+                        visible: true,
+                        highlightCaseSensitive: true,
+                    },
+                    groupPanel: { visible: false },
+                    grouping: {
+                        autoExpandAll: false,
+                    },
+                    allowColumnReordering: true,
+                    rowAlternationEnabled: true,
+                    showBorders: true,
+                    columns: [
+                        {
+                            dataField: 'Name',
+                            caption: 'FullName'
+                        },
+                        {
+                            dataField: 'Number',
+                            caption: 'Contact Number'
+                        }],
+                }).appendTo(c);
+            },
+            width: 900,
+            minHeight: 400,
+            height: 'auto',
+            showTitle: true,
+            title: 'Import Contacts',
+            visible: true,
+            dragEnabled: false,
+            hideOnOutsideClick: true,
+            showCloseButton: false,
+            toolbarItems: [{
+                widget: 'dxButton',
+                toolbar: 'bottom',
+                location: 'before',
+                options: {
+                    text: 'Close',
+                    icon: 'fa-solid fa-circle-xmark',
+                    stylingMode: 'outlined',
+                    type: 'danger',
+                    width: 150,
+                    onClick() {
+                        showImportedContactPopup.hide();
+                    },
+                },
+            },{
+                    widget: 'dxButton',
+                    toolbar: 'bottom',
+                    location: 'after',
+                    options: {
+                        text: 'Import',
+                        icon: 'check',
+                        stylingMode: 'contained',
+                        type: 'default',
+                        width: 150,
+                        onContentReady: function (e) {
+                            e.element[0].id = "submitImportedContact";
+                        },
+                        onClick() {
+                           
+                        }
+                    },
+                }
+            ],
+        }).dxPopup('instance');
+    },
 }
