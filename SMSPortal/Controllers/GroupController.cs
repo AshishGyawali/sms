@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using SMSData.DB;
 using SMSData.Models.Auth;
@@ -9,6 +10,7 @@ using Utility;
 
 namespace SMSPortal.Controllers
 {
+    [Authorize]
     public class GroupController : Controller
     {
         private readonly AuthenticationRepository _authenticationRepo;

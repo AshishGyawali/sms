@@ -69,6 +69,11 @@ namespace SMSData.Repository.Groups
             return res.Rows.Count == 0;
         }
 
-
+        public async Task<IEnumerable<GroupsViewModel>> GetMyGroups()
+        {
+            var pram = new DynamicParameters()
+            .AddParam("ClientId", SessionData.CurrentUser.ClientId);
+            return await _db.ExecuteListAsync<GroupsViewModel>("spGetGroupsAndSubgroupsName", CommandType.StoredProcedure, pram);
+        }
     }
 }

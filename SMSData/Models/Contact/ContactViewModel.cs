@@ -10,12 +10,24 @@ namespace SMSData.Models.Contact
     public class ContactViewModel
     {
         public int Id { get; set; }
-        public int GroupId { get; set; }
-        public int SubGroupId { get; set; }
+        public int? GroupId { get; set; }
+        public int? SubGroupId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; } 
         public string Contact { get; set; }
         public string Remarks { get; set; }
+    }
+
+    public class BulkContact
+    {
+        public string Name { get; set; }
+        public string Number { get; set; }
+        public int? GroupId { get; set; }
+        public int? SubGroupId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; } 
+        public string FullName { get; set; }
+        public string Contact { get; set; }
     }
 
     public class ContactListModel

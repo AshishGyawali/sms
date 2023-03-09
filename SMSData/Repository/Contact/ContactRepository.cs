@@ -27,6 +27,26 @@ namespace SMSData.Repository.Contact
             .AddParam("ClientId", SessionData.CurrentUser.ClientId);
             return await _db.ExecuteListAsync<ContactListModel>("spGetContacts", CommandType.StoredProcedure, pram);
         }
+
+        public async Task<IEnumerable<ContactListModel>> GetContactByGroupId(int groupId)
+        {
+            var query = "SELECT c.Id,c.ClientId,c.FirstName,c.LastName,c.FullName,c.Contact,s.[Name] AS SubGroupName,c.Remarks,c.CreatedDate,c.ModifiedDate FROM dbo.Contacts c LEFT JOIN dbo.Subgroup s ON s.Id = c.SubGroupId WHERE c.ClientId = @ClientId AND c.GroupId = @groupId;";
+            var pram = new DynamicParameters()
+            .AddParam("groupId",groupId)
+            .AddParam("ClientId", SessionData.CurrentUser.ClientId);
+            return await _db.ExecuteListAsync<ContactListModel>(query, CommandType.Text, pram);
+        }
+
+        public async Task<IEnumerable<ContactListModel>> GetContactBySubGroupId(int groupId, int subgroupId)
+        {
+            var query = "SELECT c.Id,c.ClientId,c.FirstName,c.LastName,c.FullName,c.Contact,c.Remarks,c.CreatedDate,c.ModifiedDate FROM dbo.Contacts c WHERE c.ClientId = @ClientId AND c.GroupId = @groupId AND c.SubGroupId = @subgroupId ;";
+            var pram = new DynamicParameters()
+            .AddParam("groupId", groupId)
+            .AddParam("subgroupId", subgroupId)
+            .AddParam("ClientId", SessionData.CurrentUser.ClientId);
+            return await _db.ExecuteListAsync<ContactListModel>(query, CommandType.Text, pram);
+        }
+
         public async Task<DbResponse> SaveContact(ContactViewModel value)
         {
             var pram = value.PrepareDynamicParameters()
@@ -43,6 +63,14 @@ namespace SMSData.Repository.Contact
             .AddParam("ClientId", SessionData.CurrentUser.ClientId);
             var res = await _db.ExecuteDataTableAsync(query, CommandType.Text, pram);
             return res.Rows.Count == 0;
+        }
+
+        public async Task<DbResponse> SaveBulkContact(string value)
+        {
+            var pram = new DynamicParameters()
+            .AddParam("ClientId", SessionData.CurrentUser.ClientId)
+            .AddParam("contactJsonString", value); // json data of imported contacts
+            return await _db.ExecuteNonQueryAsync("saveBulkContacts_sp", CommandType.StoredProcedure, pram);
         }
     }
 }

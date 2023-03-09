@@ -1,12 +1,97 @@
-﻿
+﻿@using SMSPortal.Controllers;
+@model IEnumerable<SMSData.Models.Groups.GroupsViewModel>
 @{
-    ViewData["Title"] = "MyContacts";
+    ViewData["Title"] = "My Contacts";
 }
 
-<h1>MyContacts</h1>
+<h1>My Contacts</h1>
 
 <div class="demo-container">
-    <div id="gridContainer"></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex flex-row-reverse">
+                <div class="p-2">
+                    <div id="add-contacts"></div>
+                </div>
+                <div class="p-2">
+                    <div id="import-contacts"></div>
+                </div>
+            </div>
+
+        </div><!-- end card header -->
+
+        <div class="card-body">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills nav-justified" role="tablist">
+                <li class="nav-item waves-effect waves-light">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#all" role="tab">
+                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                        <span class="d-none d-sm-block">All</span>
+                    </a>
+                </li>
+                @foreach (var item in Model)
+                {
+                    <li class="nav-item waves-effect waves-light">
+                        <a class="nav-link" data-bs-toggle="tab" data-groupId="@(item.Id)" href="#group-@(item.Id)" role="tab">
+                            <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                            <span class="d-none d-sm-block">@(item.Name)</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content p-3 text-muted">
+                <div class="tab-pane active" id="all" role="tabpanel">
+                    <div id="gridContainer"></div>
+                </div>
+                @foreach (var item in Model)
+                {
+                    <div class="tab-pane" id="group-@(item.Id)" role="tabpanel">
+
+                        <div class="card">
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link mb-2 active" id="all-subgroups-tab-@(item.Id)" data-bs-toggle="pill" href="#all-subgroups-@(item.Id)" role="tab" aria-controls="all-subgroups" aria-selected="true">All @(item.Name)</a>
+
+                                            @foreach (var sub in item.SubgroupsList)
+                                            {
+                                                <a class="nav-link mb-2" id="subgroups-@(sub.Id)-tab" data-bs-toggle="pill" data-groupId="@(item.Id)" data-subgroupId="@(sub.Id)" href="#subgroups-@(sub.Id)" role="tab" aria-controls="subgroups-@(sub.Id)" aria-selected="false" tabindex="-1">@(sub.Name)</a>
+
+                                            }
+                                        </div>
+                                    </div><!-- end col -->
+                                    <div class="col-md-10">
+                                        <div class="tab-content text-muted mt-4 mt-md-0" id="v-pills-tabContent-@(item.Id)">
+                                            <div class="tab-pane fade show active" id="all-subgroups-@(item.Id)" role="tabpanel" aria-labelledby="all-subgroups-tab-@(item.Id)">
+                                                <div class="dg-@(item.Id)"></div>
+                                            </div>
+                                            @foreach (var sub in item.SubgroupsList)
+                                            {
+                                                <div class="tab-pane fade" id="subgroups-@(sub.Id)" role="tabpanel" aria-labelledby="subgroups-@(sub.Id)-tab">
+                                                    <div class="dg-@(sub.Id)"></div>
+                                                </div>
+                                            }
+
+
+
+                                        </div>
+                                    </div><!--  end col -->
+                                </div><!-- end row -->
+                            </div><!-- end card-body -->
+                        </div>
+
+                    </div>
+                }
+
+
+            </div>
+        </div><!-- end card-body -->
+    </div><!-- end card -->
+    @*<div id="gridContainer"></div>*@
 </div>
 @section Scripts{
     <script src="/js/custom/contacts.js"></script>

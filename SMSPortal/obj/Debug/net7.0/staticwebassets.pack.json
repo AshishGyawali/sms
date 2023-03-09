@@ -189,48 +189,180 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\00f8e0d9-289e-4bba-82e3-8dcd1e60b763_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\00f8e0d9-289e-4bba-82e3-8dcd1e60b763_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contact-templete\\testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contact-templete\\testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\322f5baf-81a9-4cfa-865a-f546a22cd649_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\322f5baf-81a9-4cfa-865a-f546a22cd649_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\01dd9f9a-58bd-41ed-8fd2-35a68ab5484b_contact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\01dd9f9a-58bd-41ed-8fd2-35a68ab5484b_contact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\38203c9e-7fe2-4938-879a-2a336d92ec3a_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\38203c9e-7fe2-4938-879a-2a336d92ec3a_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\05043ffd-4966-4fe7-94a9-48dad78e266d_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\05043ffd-4966-4fe7-94a9-48dad78e266d_testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\607f5dc0-d4c6-40c8-b670-dd9a9ecb299f_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\607f5dc0-d4c6-40c8-b670-dd9a9ecb299f_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\0c21a2a2-8f8c-4390-962c-41aeaeb4db0a_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\0c21a2a2-8f8c-4390-962c-41aeaeb4db0a_testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\683dcb2c-06dc-4ff2-ae66-a3a7dcb16088_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\683dcb2c-06dc-4ff2-ae66-a3a7dcb16088_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\0e2c6d42-3eff-4c69-955d-c445bd38845a_contact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\0e2c6d42-3eff-4c69-955d-c445bd38845a_contact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\a3a16db1-0668-4fa6-ba4c-750763f62f85_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\a3a16db1-0668-4fa6-ba4c-750763f62f85_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\179ff901-575a-4d3b-a08b-563f46db8440_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\179ff901-575a-4d3b-a08b-563f46db8440_testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\a58381ad-9f0d-41f5-a9a3-6888304a2da0_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\a58381ad-9f0d-41f5-a9a3-6888304a2da0_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\20b2c60b-0ffe-4057-8e5e-38db7c5ec4e9_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\20b2c60b-0ffe-4057-8e5e-38db7c5ec4e9_testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\b04bff6f-84f0-4a4e-8d8c-0d8674680e94_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\b04bff6f-84f0-4a4e-8d8c-0d8674680e94_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\256ea70f-af78-45e4-8529-f2482d1a8403_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\256ea70f-af78-45e4-8529-f2482d1a8403_testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\b5505bc9-c149-4b63-b639-92dc88d5f09c_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\b5505bc9-c149-4b63-b639-92dc88d5f09c_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\2a8fb240-6818-44ef-8ee9-7e8ec8e3d033_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\2a8fb240-6818-44ef-8ee9-7e8ec8e3d033_testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\c7fe19d0-f179-477f-bb1e-843e413ad91c_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\c7fe19d0-f179-477f-bb1e-843e413ad91c_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\2ac4a050-f26a-43fa-b3fc-4a62527d2045_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\2ac4a050-f26a-43fa-b3fc-4a62527d2045_testContact.xlsx"
     },
     {
-      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\d33f5bf6-6968-4a4c-8733-065ec7dbbc55_testContact.xlsx",
-      "PackagePath": "staticwebassets\\files\\contactfiles\\d33f5bf6-6968-4a4c-8733-065ec7dbbc55_testContact.xlsx"
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\2c1277ad-436e-42e6-82f7-0005765c9071_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\2c1277ad-436e-42e6-82f7-0005765c9071_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\2e3f7821-d6bf-47cc-a291-58eb282dbec3_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\2e3f7821-d6bf-47cc-a291-58eb282dbec3_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\345a49f3-4fd9-4a3f-87c0-77fc38e4bd04_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\345a49f3-4fd9-4a3f-87c0-77fc38e4bd04_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\35cf3906-d783-4852-a751-e8c9c51f0a94_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\35cf3906-d783-4852-a751-e8c9c51f0a94_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\3bcfd25e-3ad9-497b-b2ca-626e2390f2f9_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\3bcfd25e-3ad9-497b-b2ca-626e2390f2f9_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\46a506ec-f2cd-49f5-ad5c-b692b60d47fe_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\46a506ec-f2cd-49f5-ad5c-b692b60d47fe_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\4858a0a0-3f70-48c5-b3f1-a076510703a1_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\4858a0a0-3f70-48c5-b3f1-a076510703a1_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\4bffcb4f-6cd6-4176-8a57-d5c4c9f11d02_contact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\4bffcb4f-6cd6-4176-8a57-d5c4c9f11d02_contact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\4cbc78d2-36ec-413e-a30b-8988e7ec044e_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\4cbc78d2-36ec-413e-a30b-8988e7ec044e_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\4eba8d36-7524-4fdd-87ea-2758b6fef570_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\4eba8d36-7524-4fdd-87ea-2758b6fef570_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\5433a666-2f82-447a-850b-a6edeb65100f_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\5433a666-2f82-447a-850b-a6edeb65100f_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\6280446d-8fa7-48a3-b277-b4b79ca3855f_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\6280446d-8fa7-48a3-b277-b4b79ca3855f_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\6532f355-8dd8-4bed-b5a0-e8273edcb154_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\6532f355-8dd8-4bed-b5a0-e8273edcb154_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\69e4dcab-033e-4e59-99d1-1ed3398c2f0a_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\69e4dcab-033e-4e59-99d1-1ed3398c2f0a_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\6dded585-d566-4f51-bc31-e5712b0f847e_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\6dded585-d566-4f51-bc31-e5712b0f847e_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\850e503d-787b-4c4f-8cbb-f93ec677da2c_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\850e503d-787b-4c4f-8cbb-f93ec677da2c_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\879a6efd-5611-4ee5-8219-ca67e24e9862_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\879a6efd-5611-4ee5-8219-ca67e24e9862_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\88de24bc-fceb-4bd1-be26-fedaa004b6b4_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\88de24bc-fceb-4bd1-be26-fedaa004b6b4_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\8db599f2-de75-478f-a5aa-ffdb733037d5_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\8db599f2-de75-478f-a5aa-ffdb733037d5_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\98c9eff9-126b-43f4-b250-9e9bf95d9d74_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\98c9eff9-126b-43f4-b250-9e9bf95d9d74_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\9c419275-946b-422a-a5a3-f44eebd584d0_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\9c419275-946b-422a-a5a3-f44eebd584d0_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\b5960341-e3b1-4357-a636-6804d5d4b1bc_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\b5960341-e3b1-4357-a636-6804d5d4b1bc_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\b772ffef-e39e-45c2-af37-cca010ed7061_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\b772ffef-e39e-45c2-af37-cca010ed7061_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\ba3f5bd7-c629-4556-9bbe-3242927086f6_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\ba3f5bd7-c629-4556-9bbe-3242927086f6_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\bdfc242f-2cf6-4b76-a50d-a08d6a8bc15d_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\bdfc242f-2cf6-4b76-a50d-a08d6a8bc15d_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\c99ca8b1-7a95-4272-82a8-e0cd6aeaba8d_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\c99ca8b1-7a95-4272-82a8-e0cd6aeaba8d_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\cf5a8732-dc5b-4ce8-84cb-f40d94266dc8_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\cf5a8732-dc5b-4ce8-84cb-f40d94266dc8_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\d475ca09-4ff0-4aeb-9609-20b5c846e677_contact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\d475ca09-4ff0-4aeb-9609-20b5c846e677_contact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\d9cbb838-e6a3-4880-9028-5fa7f111ab95_contact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\d9cbb838-e6a3-4880-9028-5fa7f111ab95_contact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\d9eb43a8-d1f3-4ea5-9028-c5774710e9b3_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\d9eb43a8-d1f3-4ea5-9028-c5774710e9b3_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\dc6385b7-2ce6-43ac-851d-b7a4ab21a26e_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\dc6385b7-2ce6-43ac-851d-b7a4ab21a26e_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\dc6a2386-9942-44cc-93eb-594ebd2ecc1b_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\dc6a2386-9942-44cc-93eb-594ebd2ecc1b_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\e1a3dfce-8a01-4965-a161-1a0f661198d8_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\e1a3dfce-8a01-4965-a161-1a0f661198d8_testContact.xlsx"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\files\\contactfiles\\f65acbb1-2634-4e3c-818e-667aa0b5a9dd_testContact.xlsx",
+      "PackagePath": "staticwebassets\\files\\contactfiles\\f65acbb1-2634-4e3c-818e-667aa0b5a9dd_testContact.xlsx"
     },
     {
       "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\images\\theme\\auth-bg.jpg",
@@ -679,6 +811,10 @@
     {
       "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\Contact\\import-contact.html",
       "PackagePath": "staticwebassets\\template\\Contact\\import-contact.html"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\Contact\\view-imported-contact.html",
+      "PackagePath": "staticwebassets\\template\\Contact\\view-imported-contact.html"
     },
     {
       "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\template\\group\\create-subgroup.html",

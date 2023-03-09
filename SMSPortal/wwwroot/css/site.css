@@ -42,3 +42,26 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
 }
+
+.hidden {
+    display: none;
+}
+
+.tableDateFromNow {
+    font-size: 17px;
+    font-family: Monotype Corsiva, Times, serif;
+    color: #5156be;
+    font-weight: 600;
+    /*text-shadow: 1px 1px #5cb85c;*/
+}
+
+.tab-content .dx-textbox {
+    height: 35px;
+}
+
+@media only screen and (min-width: 600px) {
+    .download-sample {
+        margin-top: 60px !important;
+    }
+}
+

@@ -1,6 +1,43 @@
-﻿<form id="importContactFile" method="post">
-    <div class="form-group">
-        <label for="contactFile" class="form-label">Select your file</label>
-        <input class="form-control" type="file" name="contactFile" id="contactFile">
+﻿<style>
+    a.icon-block {
+        display: inline-block;
+        width: 10em;
+        float: left;
+        text-align: center;
+    }
+        a.icon-block i,
+        a.icon-block span {
+            display: block;
+            width: 100%;
+            clear: both;
+        }
+        
+</style>
+
+<div class="row">
+    <div class="alert alert-info" role="alert">
+        Select group and subgroup where you want your contact to be placed while importing. You can choose both or only group or leave it blank as your need.
     </div>
-</form>
+    <div class="col-md-8">
+        <form id="importContactFile" method="post">
+            <div class="form-group">
+                <div id="groupId"></div>
+            </div>
+            <div class="form-group mt-3">
+                <div id="subgroupId"></div>
+            </div>
+            <hr />
+            <div class="form-group mt-3">
+                <label for="contactFile" class="form-label">Select your file</label>
+                <input class="form-control" type="file" name="contactFile" id="contactFile">
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4 mt-2 download-sample">
+        <a href="/files/contact-templete/testContact.xlsx" class="icon-block">
+            <i class="fa-solid fa-3x fa-file-excel" style="color: #414598;"></i>
+            <span>Download sample</span>
+        </a>
+    </div>
+</div>
+

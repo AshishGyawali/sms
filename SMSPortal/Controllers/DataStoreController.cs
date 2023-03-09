@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SMSData.DB;
 using SMSData.Repository.Auth;
 using SMSData.Repository.Utility;
@@ -6,6 +7,7 @@ using System.Data.SqlClient;
 
 namespace SMSPortal.Controllers
 {
+    [Authorize]
     public class DataStoreController : Controller
     {
         private readonly DataStoreRepository _dataStoreRepo;
