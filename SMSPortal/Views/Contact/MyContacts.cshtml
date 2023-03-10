@@ -54,7 +54,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-2">
-                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab-@(item.Id)" role="tablist" aria-orientation="vertical">
                                             <a class="nav-link mb-2 active" id="all-subgroups-tab-@(item.Id)" data-bs-toggle="pill" href="#all-subgroups-@(item.Id)" role="tab" aria-controls="all-subgroups" aria-selected="true">All @(item.Name)</a>
 
                                             @foreach (var sub in item.SubgroupsList)

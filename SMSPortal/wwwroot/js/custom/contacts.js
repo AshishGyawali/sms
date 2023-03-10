@@ -191,6 +191,7 @@
     },
 
     addNew: function (data) {
+        
         if ($("#addContactPopup").length == 0) {
 
             $("<div />").attr("id", "addContactPopup").appendTo("body")
@@ -204,12 +205,15 @@
                 c.append("<div id = 'add-contact'></div>");
             },
             onShowing: function (e) {
-
+                var groupsIdval = parseInt($("ul.nav a.active").attr("data-groupId"));
+                var subgroupsIdval = parseInt($(".tab-pane.active a.active").attr("data-subgroupId"));
+                var groupIdval = isNaN(groupsIdval) ? null : groupsIdval;
+                var subgroupIdval = isNaN(subgroupsIdval) ? null : subgroupsIdval;
                 templateManager.getTemplete("contact/create-contact").then(x => {
                     let ctx = $('#add-contact');
                     ctx.html(x);
                     $('#Id', ctx).val(data ? data.Id : 0);
-                    $('#groupId').dxSelectBox({
+                    $('#groupId',ctx).dxSelectBox({
                         dataSource: appStore.get('groups'),
                         name: 'GroupId',
                         displayExpr: 'Name',
@@ -218,27 +222,32 @@
                         valueExpr: 'Id',
                         label: "Group Name",
                         labelMode: "static",
+                        value: groupIdval,
                         onValueChanged(data) {
-                            $('#subgroupId').dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
+                                $('#subgroupId',ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
                         },
                         onEnterKey: function () {
                             $('#createContact').submit();
                         }
                     });
-                    $('#subgroupId').dxSelectBox({
+                    
+                    $('#subgroupId',ctx).dxSelectBox({
                         dataSource: [],
                         name: 'SubGroupId',
                         displayExpr: 'Name',
                         showClearButton: true,
                         searchEnabled: true,
                         valueExpr: 'Id',
+                        value: subgroupIdval,
                         label: "Sub-Group Name",
                         labelMode: "static",
                         onEnterKey() {
                             $('#createContact').submit();
                         }
                     });
-
+                    if (groupIdval != null) {
+                        $('#subgroupId',ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', groupIdval || 0));
+                    }
                     $('#FirstName', ctx).dxTextBox({
                         name: 'FirstName',
                         label: "First Name",
@@ -315,20 +324,6 @@
             toolbarItems: [{
                 widget: 'dxButton',
                 toolbar: 'bottom',
-                location: 'before',
-                options: {
-                    text: 'Close',
-                    icon: 'fa-solid fa-circle-xmark',
-                    stylingMode: 'outlined',
-                    type: 'danger',
-                    width: 150,
-                    onClick() {
-                        addContactPopup.hide();
-                    },
-                },
-            }, {
-                widget: 'dxButton',
-                toolbar: 'bottom',
                 location: 'after',
                 options: {
                     text: 'Import',
@@ -362,7 +357,22 @@
                         $('#createContact').submit();
                     }
                 },
-            }],
+                }, {
+                    widget: 'dxButton',
+                    toolbar: 'bottom',
+                    location: 'after',
+                    options: {
+                        text: 'Close',
+                        icon: 'fa-solid fa-circle-xmark',
+                        stylingMode: 'outlined',
+                        type: 'danger',
+                        width: 150,
+                        onClick() {
+                            addContactPopup.hide();
+                        },
+                    },
+                }
+            ],
         }).dxPopup('instance');
     }, // add new individual contact
 
@@ -381,42 +391,50 @@
                 c.append("<div id = 'import-contact'></div>");
             },
             onShowing: function (e) {
-
+                var groupsIdval = parseInt($("ul.nav a.active").attr("data-groupId"));
+                var subgroupsIdval = parseInt($(".tab-pane.active a.active").attr("data-subgroupId"));
+                var groupIdval = isNaN(groupsIdval) ? null : groupsIdval;
+                var subgroupIdval = isNaN(subgroupsIdval) ? null : subgroupsIdval;
                 templateManager.getTemplete("contact/import-contact").then(x => {
                     let ctx = $('#import-contact');
                     ctx.html(x);
-                    $('#groupId').dxSelectBox({
+                    $('#groupId',ctx).dxSelectBox({
                         dataSource: appStore.get('groups'),
                         name: 'GroupId',
                         displayExpr: 'Name',
                         showClearButton: true,
                         searchEnabled: true,
                         valueExpr: 'Id',
+                        value: groupIdval,
                         label: "Group Name",
-                        placeholder: "Select to place into",
+                        placeholder: "Select to place into or leave blank",
                         labelMode: "static",
                         onValueChanged(data) {
 
-                            $('#subgroupId').dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
+                            $('#subgroupId',ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
                         },
                         onEnterKey: function () {
                             $('#importContactFile').submit();
                         }
                     });
-                    $('#subgroupId').dxSelectBox({
+                    $('#subgroupId',ctx).dxSelectBox({
                         dataSource: [],
                         name: 'SubGroupId',
                         displayExpr: 'Name',
                         showClearButton: true,
                         searchEnabled: true,
                         valueExpr: 'Id',
+                        value: subgroupIdval,
                         label: "Sub-Group Name",
-                        placeholder: "Select to place into",
+                        placeholder: "Select to place into or leave blank",
                         labelMode: "static",
                         onEnterKey() {
                             $('#importContactFile').submit();
                         }
                     });
+                    if (groupIdval != null) {
+                        $('#subgroupId', ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', groupIdval || 0));
+                    }
                     $('#importContactFile').submitPopupForm({
                         url: "/contact/importcontact",
                         method: 'POST',
@@ -443,20 +461,6 @@
             toolbarItems: [{
                 widget: 'dxButton',
                 toolbar: 'bottom',
-                location: 'before',
-                options: {
-                    text: 'Close',
-                    icon: 'fa-solid fa-circle-xmark',
-                    stylingMode: 'outlined',
-                    type: 'danger',
-                    width: 150,
-                    onClick() {
-                        addContactPopup.hide();
-                    },
-                },
-            }, {
-                widget: 'dxButton',
-                toolbar: 'bottom',
                 location: 'after',
                 options: {
                     text: 'Import',
@@ -472,7 +476,22 @@
                         $('#importContactFile').submit();
                     }
                 },
-            }],
+            },{
+                    widget: 'dxButton',
+                    toolbar: 'bottom',
+                    location: 'after',
+                    options: {
+                        text: 'Close',
+                        icon: 'fa-solid fa-circle-xmark',
+                        stylingMode: 'outlined',
+                        type: 'danger',
+                        width: 150,
+                        onClick() {
+                            addContactPopup.hide();
+                        },
+                    },
+                }
+            ],
         }).dxPopup('instance');
     }, // import bulk contact
 
@@ -543,20 +562,6 @@
             toolbarItems: [{
                 widget: 'dxButton',
                 toolbar: 'bottom',
-                location: 'before',
-                options: {
-                    text: 'Close',
-                    icon: 'fa-solid fa-circle-xmark',
-                    stylingMode: 'outlined',
-                    type: 'danger',
-                    width: 150,
-                    onClick() {
-                        showImportedContactPopup.hide();
-                    },
-                },
-            }, {
-                widget: 'dxButton',
-                toolbar: 'bottom',
                 location: 'after',
                 options: {
                     text: 'Import',
@@ -564,6 +569,7 @@
                     stylingMode: 'contained',
                     type: 'default',
                     width: 150,
+                    hint: 'Focus out from the cell once you\'re done editing',
                     onContentReady: function (e) {
                         e.element[0].id = "submitImportedContact";
                     },
@@ -586,7 +592,21 @@
                         });
                     }
                 },
-            }
+            },{
+                    widget: 'dxButton',
+                    toolbar: 'bottom',
+                    location: 'after',
+                    options: {
+                        text: 'Close',
+                        icon: 'fa-solid fa-circle-xmark',
+                        stylingMode: 'outlined',
+                        type: 'danger',
+                        width: 150,
+                        onClick() {
+                            showImportedContactPopup.hide();
+                        },
+                    },
+                }
             ],
         }).dxPopup('instance');
     }, // show grid of imported contacts before saving

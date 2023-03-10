@@ -752,6 +752,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contact-templete\testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\0171ef2c-8cbc-471f-bc8d-89286aa88bc6_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/0171ef2c-8cbc-471f-bc8d-89286aa88bc6_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\0171ef2c-8cbc-471f-bc8d-89286aa88bc6_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\01dd9f9a-58bd-41ed-8fd2-35a68ab5484b_contact.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>SMSPortal</SourceId>
@@ -784,6 +800,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\05043ffd-4966-4fe7-94a9-48dad78e266d_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\0654dd18-c48a-4e3b-b369-3b367eb17b58_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/0654dd18-c48a-4e3b-b369-3b367eb17b58_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\0654dd18-c48a-4e3b-b369-3b367eb17b58_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\0c21a2a2-8f8c-4390-962c-41aeaeb4db0a_testContact.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>SMSPortal</SourceId>
@@ -815,6 +847,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\0e2c6d42-3eff-4c69-955d-c445bd38845a_contact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\1148c2c4-cdf0-4f82-8fa9-2096109c1c40_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/1148c2c4-cdf0-4f82-8fa9-2096109c1c40_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\1148c2c4-cdf0-4f82-8fa9-2096109c1c40_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\179ff901-575a-4d3b-a08b-563f46db8440_testContact.xlsx))">
       <SourceType>Package</SourceType>
@@ -976,6 +1024,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\3bcfd25e-3ad9-497b-b2ca-626e2390f2f9_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\44868438-27ad-49cf-a986-6555491c121f_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/44868438-27ad-49cf-a986-6555491c121f_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\44868438-27ad-49cf-a986-6555491c121f_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\46a506ec-f2cd-49f5-ad5c-b692b60d47fe_testContact.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>SMSPortal</SourceId>
@@ -1040,6 +1104,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\4cbc78d2-36ec-413e-a30b-8988e7ec044e_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\4e458065-6d02-4cd8-9762-29d25d9095d6_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/4e458065-6d02-4cd8-9762-29d25d9095d6_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\4e458065-6d02-4cd8-9762-29d25d9095d6_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\4eba8d36-7524-4fdd-87ea-2758b6fef570_testContact.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>SMSPortal</SourceId>
@@ -1055,6 +1135,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\4eba8d36-7524-4fdd-87ea-2758b6fef570_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\51abdc77-e7c4-49a6-ae1c-700123c47782_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/51abdc77-e7c4-49a6-ae1c-700123c47782_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\51abdc77-e7c4-49a6-ae1c-700123c47782_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\5433a666-2f82-447a-850b-a6edeb65100f_testContact.xlsx))">
       <SourceType>Package</SourceType>
@@ -1136,6 +1232,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\6dded585-d566-4f51-bc31-e5712b0f847e_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\70d0a2a5-991f-4933-97f8-e92066cb9ba5_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/70d0a2a5-991f-4933-97f8-e92066cb9ba5_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\70d0a2a5-991f-4933-97f8-e92066cb9ba5_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\850e503d-787b-4c4f-8cbb-f93ec677da2c_testContact.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>SMSPortal</SourceId>
@@ -1199,6 +1311,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\8db599f2-de75-478f-a5aa-ffdb733037d5_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\8e4ed3af-3e74-4050-937e-a69d868c5cb6_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/8e4ed3af-3e74-4050-937e-a69d868c5cb6_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\8e4ed3af-3e74-4050-937e-a69d868c5cb6_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\98b3af14-e96b-43c7-81f2-7afc25dc857a_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/98b3af14-e96b-43c7-81f2-7afc25dc857a_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\98b3af14-e96b-43c7-81f2-7afc25dc857a_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\98c9eff9-126b-43f4-b250-9e9bf95d9d74_testContact.xlsx))">
       <SourceType>Package</SourceType>
@@ -1296,6 +1440,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\bdfc242f-2cf6-4b76-a50d-a08d6a8bc15d_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\c7ccad09-9802-464e-9a57-2c3c2f51118a_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/c7ccad09-9802-464e-9a57-2c3c2f51118a_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\c7ccad09-9802-464e-9a57-2c3c2f51118a_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\c99ca8b1-7a95-4272-82a8-e0cd6aeaba8d_testContact.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>SMSPortal</SourceId>
@@ -1311,6 +1471,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\c99ca8b1-7a95-4272-82a8-e0cd6aeaba8d_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\cbf1caa0-3928-45d4-ac7d-06a27610cdba_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/cbf1caa0-3928-45d4-ac7d-06a27610cdba_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\cbf1caa0-3928-45d4-ac7d-06a27610cdba_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\cf5a8732-dc5b-4ce8-84cb-f40d94266dc8_testContact.xlsx))">
       <SourceType>Package</SourceType>
@@ -1408,6 +1584,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\dc6a2386-9942-44cc-93eb-594ebd2ecc1b_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\de92bedc-9c89-4b01-9d30-6ebbcef64d19_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/de92bedc-9c89-4b01-9d30-6ebbcef64d19_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\de92bedc-9c89-4b01-9d30-6ebbcef64d19_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\e1a3dfce-8a01-4965-a161-1a0f661198d8_testContact.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>SMSPortal</SourceId>
@@ -1423,6 +1615,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\e1a3dfce-8a01-4965-a161-1a0f661198d8_testContact.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\e320ae93-0559-4fe7-a0de-3795a59bce12_testContact.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>SMSPortal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SMSPortal</BasePath>
+      <RelativePath>files/contactfiles/e320ae93-0559-4fe7-a0de-3795a59bce12_testContact.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\e320ae93-0559-4fe7-a0de-3795a59bce12_testContact.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\files\contactfiles\f65acbb1-2634-4e3c-818e-667aa0b5a9dd_testContact.xlsx))">
       <SourceType>Package</SourceType>

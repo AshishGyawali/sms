@@ -48,8 +48,9 @@ body {
 }
 
 .tableDateFromNow {
-    font-size: 17px;
-    font-family: Monotype Corsiva, Times, serif;
+    font-size: 12px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
     color: #5156be;
     font-weight: 600;
     /*text-shadow: 1px 1px #5cb85c;*/
