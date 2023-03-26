@@ -29,55 +29,22 @@
         // Determine the maximum length based on the encoding type
         const maxMessageLength = isUTF16 ? maxUTF16Length : max7BitLength;
 
-        // Calculate the number of message parts required to send the text
-        const numParts = Math.ceil(text.length / maxMessageLength.firstMessage);
-
-        // Calculate the number of characters in the last message
-        const lastMessageLength = text.length % maxMessageLength.firstMessage || maxMessageLength.firstMessage;
-
-        // Calculate the maximum number of characters for subsequent messages
-        const maxSubsequentLength = maxMessageLength.subsequentMessages - 6;
-
-        // Calculate the number of remaining characters in the last message
-        let remainingCharacters;
-        if (isUTF16 && numParts > 1) {
-            // For subsequent UTF-16 messages, subtract the header length from the maximum length
-            const headerLength = 6;
-            const messageLength = maxMessageLength.subsequentMessages - headerLength;
-            remainingCharacters = messageLength - (lastMessageLength - headerLength) / 2;
-        } else {
-            remainingCharacters = maxSubsequentLength - (lastMessageLength - 6);
+        const maxSubsequentLength = maxMessageLength.subsequentMessages;
+        
+        var per_message = maxMessageLength.firstMessage;
+        if (text.length > per_message) {
+            per_message = maxSubsequentLength;
         }
-
-        // If there are no remaining characters, set the value to zero
-        if (remainingCharacters < 0) {
-            remainingCharacters = 0;
+        let numParts = Math.ceil(text.length / per_message);
+        var remainingCharacters = (per_message * numParts) - text.length;
+        if (remainingCharacters === 0 && numParts === 0) {
+            remainingCharacters = per_message;
         }
 
         return { numParts, remainingCharacters };
 
 
     },
-
-    //const GSM_CHARSET = '@£$¥èéùìòÇØøÅåΔ_ΦΓΛΩΠΨΣΘΞÆæßÉ !"#¤%&\'()*+,-./0123456789:;<=>?¡ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÑÜ§¿abcdefghijklmnopqrstuvwxyzäöñüà\n';
-    //const GSM_MAX_CHARS = 160;
-    //const UNICODE_MAX_CHARS = 70;
-    //const GSM_EXTENDED_CHARSET = '\\^{}\\\\\\[~\\]|€';
-
-    //// Check if text contains any characters outside the GSM 7-bit character set
-    //const hasUnicodeChars = new RegExp(`[^${GSM_CHARSET}${GSM_EXTENDED_CHARSET}]`, 'g').test(text);
-
-    //if (hasUnicodeChars) {
-    //    // If text contains Unicode characters, use the Unicode SMS message limit
-    //    const unicodeSmsCount = Math.ceil(text.length / UNICODE_MAX_CHARS);
-    //    const remainingChars = unicodeSmsCount * UNICODE_MAX_CHARS - text.length;
-    //    return { smsCount: unicodeSmsCount, remainingChars: remainingChars };
-    //} else {
-    //    // If text only contains GSM 7-bit characters, use the GSM SMS message limit
-    //    const gsmSmsCount = Math.ceil(text.length / GSM_MAX_CHARS);
-    //    const remainingChars = gsmSmsCount * GSM_MAX_CHARS - text.length;
-    //    return { smsCount: numParts, remainingChars: remainingChars };
-    //}
 
     sendSMS: function (data) {
         {
