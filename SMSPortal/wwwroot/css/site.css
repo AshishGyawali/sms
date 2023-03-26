@@ -30,6 +30,10 @@ body {
     height:45px;
 }
 
+.dx-texteditor-input-container {
+    margin-top: 5px;
+}
+
 .dx-label span {
     font-size: 15px !important;
     font-weight: 600;
@@ -66,3 +70,44 @@ body {
     }
 }
 
+.btn-send-sms {
+    color: white !important;
+    background-color: #57b1c5 !important;
+}
+
+    .btn-send-sms.dx-state-hover {
+        background-color: #247a8d !important;
+        color: white !important;
+    }
+
+    .btn-send-sms.dx-state-active {
+        background-color: #247a8d !important;
+        color: white !important;
+    }
+
+
+.number-count {
+    font-size: 18px;
+    font-weight: 500;
+}
+.remaining-credit {
+    font-size: 18px;
+    font-weight: 500;
+}
+#number-count {
+    padding: 0px 3px;
+    border: 1px solid;
+    border-radius: 13px;
+    color: white;
+    background-color: #414598;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#selfSms .dx-checkbox-container{
+    margin-left:11px;
+}
+
+.lang-char {
+    color: #414598;
+}

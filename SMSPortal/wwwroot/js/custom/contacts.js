@@ -1,5 +1,15 @@
 ﻿let contacts = {
     init: function () {
+        var smsBtn = $('#send-sms').dxButton({
+            stylingMode: 'contained',
+            text: 'Send SMS',
+            disabled: true,
+            elementAttr: { class: "btn-send-sms" },
+            width: 150,
+            onClick() {
+                sms.sendSMS();
+            },
+        }).dxButton('instance');; // send sms 
         $('#add-contacts').dxButton({
             icon: 'plus',
             width: 150,
@@ -8,7 +18,7 @@
             onClick() {
                 contacts.addNew();
             }
-        }); 
+        });
         $('#import-contacts').dxButton({
             text: 'Import',
             icon: 'xlsfile',
@@ -25,7 +35,7 @@
         $('a[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
             var groupId = $(e.target).attr("data-groupId");
             var subgroupId = $(e.target).attr("data-subgroupId");
-            $('.dg-' + subgroupId).dxDataGrid({
+            var subgroupDataGrid = $('.dg-' + subgroupId).dxDataGrid({
                 dataSource: "/contact/getContactBySubGroupId?groupId=" + groupId + "&subgroupId=" + subgroupId,
                 paging: {
                     pageSize: 25,
@@ -33,6 +43,11 @@
                 pager: {
                     showPageSizeSelector: true,
                     allowedPageSizes: [10, 25, 50, 100],
+                },
+                selection: {
+                    mode: 'multiple',
+                    selectAllMode: 'allPages',
+                    showCheckBoxesMode: 'always',
                 },
                 remoteOperations: false,
                 searchPanel: {
@@ -71,13 +86,25 @@
                         }
                     }
                 ],
-                toolbar: {
+                onSelectionChanged: function (e) { // Handler of the "selectionChanged" event
+                    var selectedData = e.selectedRowsData;
+                    if (selectedData.length > 0) {
+                        ($('.dg-' + groupId).dxDataGrid('instance')).clearSelection();
+                        dataGrid.clearSelection();
+                        smsBtn.option('disabled', false);
+                        smsBtn.option('text', 'Send SMS (' + selectedData.length + ')');
+
+                    }
+                    else {
+                        smsBtn.option('text', 'Send SMS');
+                        smsBtn.option('disabled', true);
+                    }
                 }
-            });
+            }).dxDataGrid('instance');;
         }); // show grids of contacts filtering subgroups
         $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
             var groupId = $(e.target).attr("data-groupId");
-            $('.dg-' + groupId).dxDataGrid({
+            var groupDataGrid = $('.dg-' + groupId).dxDataGrid({
                 dataSource: "/contact/getContactByGroupId?groupId=" + groupId,
                 paging: {
                     pageSize: 25,
@@ -85,6 +112,11 @@
                 pager: {
                     showPageSizeSelector: true,
                     allowedPageSizes: [10, 25, 50, 100],
+                },
+                selection: {
+                    mode: 'multiple',
+                    selectAllMode: 'allPages',
+                    showCheckBoxesMode: 'always',
                 },
                 remoteOperations: false,
                 searchPanel: {
@@ -127,12 +159,23 @@
                         }
                     }
                 ],
-                toolbar: {
+                onSelectionChanged: function (e) { // Handler of the "selectionChanged" event
+                    var selectedData = groupDataGrid.getSelectedRowsData();
+                    //subgroupDataGrid.clearSelection();
+                    if (selectedData.length > 0) {
+                        smsBtn.option('disabled', false);
+                        smsBtn.option('text', 'Send SMS (' + selectedData.length + ')');
+                        dataGrid.clearSelection();
+                    }
+                    else {
+                        smsBtn.option('text', 'Send SMS');
+                        smsBtn.option('disabled', true);
+                    }
                 }
-            });
+            }).dxDataGrid('instance');
         }); // show grids of contacts filtering groups
 
-        $('#gridContainer').dxDataGrid({
+        var dataGrid = $('#gridContainer').dxDataGrid({
             dataSource: "/contact/getcontacts/",
 
             paging: {
@@ -141,6 +184,11 @@
             pager: {
                 showPageSizeSelector: true,
                 allowedPageSizes: [10, 25, 50, 100],
+            },
+            selection: {
+                mode: 'multiple',
+                selectAllMode: 'allPages',
+                showCheckBoxesMode: 'always',
             },
             remoteOperations: false,
             searchPanel: {
@@ -187,11 +235,23 @@
                     }
                 }
             ],
-        }); // show grids of all contacts
+            onSelectionChanged: function (e) { // Handler of the "selectionChanged" event
+                var selectedData = dataGrid.getSelectedRowsData();
+                if (selectedData.length > 0) {
+                    smsBtn.option('disabled', false);
+                    smsBtn.option('text', 'Send SMS (' + selectedData.length + ')');
+                }
+                else {
+                    smsBtn.option('text', 'Send SMS');
+                    smsBtn.option('disabled', true);
+                }
+            }
+        }).dxDataGrid('instance'); // show grids of all contacts
+
     },
 
     addNew: function (data) {
-        
+
         if ($("#addContactPopup").length == 0) {
 
             $("<div />").attr("id", "addContactPopup").appendTo("body")
@@ -213,7 +273,7 @@
                     let ctx = $('#add-contact');
                     ctx.html(x);
                     $('#Id', ctx).val(data ? data.Id : 0);
-                    $('#groupId',ctx).dxSelectBox({
+                    $('#groupId', ctx).dxSelectBox({
                         dataSource: appStore.get('groups'),
                         name: 'GroupId',
                         displayExpr: 'Name',
@@ -224,14 +284,14 @@
                         labelMode: "static",
                         value: groupIdval,
                         onValueChanged(data) {
-                                $('#subgroupId',ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
+                            $('#subgroupId', ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
                         },
                         onEnterKey: function () {
                             $('#createContact').submit();
                         }
                     });
-                    
-                    $('#subgroupId',ctx).dxSelectBox({
+
+                    $('#subgroupId', ctx).dxSelectBox({
                         dataSource: [],
                         name: 'SubGroupId',
                         displayExpr: 'Name',
@@ -246,7 +306,7 @@
                         }
                     });
                     if (groupIdval != null) {
-                        $('#subgroupId',ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', groupIdval || 0));
+                        $('#subgroupId', ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', groupIdval || 0));
                     }
                     $('#FirstName', ctx).dxTextBox({
                         name: 'FirstName',
@@ -357,21 +417,21 @@
                         $('#createContact').submit();
                     }
                 },
-                }, {
-                    widget: 'dxButton',
-                    toolbar: 'bottom',
-                    location: 'after',
-                    options: {
-                        text: 'Close',
-                        icon: 'fa-solid fa-circle-xmark',
-                        stylingMode: 'outlined',
-                        type: 'danger',
-                        width: 150,
-                        onClick() {
-                            addContactPopup.hide();
-                        },
+            }, {
+                widget: 'dxButton',
+                toolbar: 'bottom',
+                location: 'after',
+                options: {
+                    text: 'Close',
+                    icon: 'fa-solid fa-circle-xmark',
+                    stylingMode: 'outlined',
+                    type: 'danger',
+                    width: 150,
+                    onClick() {
+                        addContactPopup.hide();
                     },
-                }
+                },
+            }
             ],
         }).dxPopup('instance');
     }, // add new individual contact
@@ -398,7 +458,7 @@
                 templateManager.getTemplete("contact/import-contact").then(x => {
                     let ctx = $('#import-contact');
                     ctx.html(x);
-                    $('#groupId',ctx).dxSelectBox({
+                    $('#groupId', ctx).dxSelectBox({
                         dataSource: appStore.get('groups'),
                         name: 'GroupId',
                         displayExpr: 'Name',
@@ -411,13 +471,13 @@
                         labelMode: "static",
                         onValueChanged(data) {
 
-                            $('#subgroupId',ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
+                            $('#subgroupId', ctx).dxSelectBox('instance').option('dataSource', appStore.get('subgroups', data.value || 0));
                         },
                         onEnterKey: function () {
                             $('#importContactFile').submit();
                         }
                     });
-                    $('#subgroupId',ctx).dxSelectBox({
+                    $('#subgroupId', ctx).dxSelectBox({
                         dataSource: [],
                         name: 'SubGroupId',
                         displayExpr: 'Name',
@@ -442,7 +502,6 @@
                         submitBtn: $('#importContact').dxButton('instance'),
                         //hideSuccessMessage: true,
                         success: function (res) {
-                            console.log(res);
                             contacts.showImportedContact(res);
                             addContactPopup.hide();
                         },
@@ -472,25 +531,24 @@
                         e.element[0].id = "submitContact";
                     },
                     onClick() {
-                        console.log('hey');
                         $('#importContactFile').submit();
                     }
                 },
-            },{
-                    widget: 'dxButton',
-                    toolbar: 'bottom',
-                    location: 'after',
-                    options: {
-                        text: 'Close',
-                        icon: 'fa-solid fa-circle-xmark',
-                        stylingMode: 'outlined',
-                        type: 'danger',
-                        width: 150,
-                        onClick() {
-                            addContactPopup.hide();
-                        },
+            }, {
+                widget: 'dxButton',
+                toolbar: 'bottom',
+                location: 'after',
+                options: {
+                    text: 'Close',
+                    icon: 'fa-solid fa-circle-xmark',
+                    stylingMode: 'outlined',
+                    type: 'danger',
+                    width: 150,
+                    onClick() {
+                        addContactPopup.hide();
                     },
-                }
+                },
+            }
             ],
         }).dxPopup('instance');
     }, // import bulk contact
@@ -511,7 +569,7 @@
                 templateManager.getTemplete("contact/view-imported-contact").then(x => {
                     let ctx = $('#import-newcontact');
                     ctx.html(x);
-                    
+
                     $('#viewImportedContact').dxDataGrid({
                         dataSource: data.Contacts,
                         paging: {
@@ -577,7 +635,7 @@
                         $.ajax({
                             type: "POST",
                             url: "/contact/savebulkcontact",
-                            data: { model: data.Contacts, groupId: data.GroupId, subgroupId: data.SubgroupId},
+                            data: { model: data.Contacts, groupId: data.GroupId, subgroupId: data.SubgroupId },
                             success: function (res) {
                                 if (!res.HasError) {
                                     showImportedContactPopup.hide();
@@ -592,21 +650,21 @@
                         });
                     }
                 },
-            },{
-                    widget: 'dxButton',
-                    toolbar: 'bottom',
-                    location: 'after',
-                    options: {
-                        text: 'Close',
-                        icon: 'fa-solid fa-circle-xmark',
-                        stylingMode: 'outlined',
-                        type: 'danger',
-                        width: 150,
-                        onClick() {
-                            showImportedContactPopup.hide();
-                        },
+            }, {
+                widget: 'dxButton',
+                toolbar: 'bottom',
+                location: 'after',
+                options: {
+                    text: 'Close',
+                    icon: 'fa-solid fa-circle-xmark',
+                    stylingMode: 'outlined',
+                    type: 'danger',
+                    width: 150,
+                    onClick() {
+                        showImportedContactPopup.hide();
                     },
-                }
+                },
+            }
             ],
         }).dxPopup('instance');
     }, // show grid of imported contacts before saving

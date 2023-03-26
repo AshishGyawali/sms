@@ -10,6 +10,7 @@ using SMSData.Models.Mail;
 using SMSData.Repository.Auth;
 using SMSData.Repository.Contact;
 using SMSData.Repository.Groups;
+using SMSData.Repository.Sms;
 using SMSData.Repository.Utility;
 using System.Configuration;
 using System.Text.Json;
@@ -40,6 +41,7 @@ builder.Services.AddTransient<AuthenticationRepository, AuthenticationRepository
 builder.Services.AddTransient<GroupsRepository, GroupsRepository>();
 builder.Services.AddTransient<DataStoreRepository, DataStoreRepository>();
 builder.Services.AddTransient<ContactRepository, ContactRepository>();
+builder.Services.AddTransient<SmsRepository, SmsRepository>();
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();

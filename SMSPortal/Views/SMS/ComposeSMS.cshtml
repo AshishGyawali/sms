@@ -3,3 +3,30 @@
 }
 
 <h1>Compose SMS</h1>
+
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <ul id="myTags">
+                <!-- Existing list items will be pre-added to the tags -->
+                <li>Tag1</li>
+                <li>Tag2</li>
+            </ul>
+            <form id="sendSMS" method="post">
+                <div id="sendTo"></div>
+                <div id="messageBody"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="~/js/custom/sms.js"></script>
+
+    <script>
+        $(function () {
+            sms.init();
+        })
+    </script>
+    }

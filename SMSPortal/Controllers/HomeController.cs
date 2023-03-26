@@ -20,6 +20,11 @@ namespace SMSPortal.Controllers
             return View();
         }
 
+        public IActionResult CK()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

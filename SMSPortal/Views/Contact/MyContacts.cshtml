@@ -9,12 +9,15 @@
 <div class="demo-container">
     <div class="card">
         <div class="card-header">
-            <div class="d-flex flex-row-reverse">
+            <div class="d-flex flex-row-reverse"> 
                 <div class="p-2">
                     <div id="add-contacts"></div>
                 </div>
                 <div class="p-2">
                     <div id="import-contacts"></div>
+                </div>
+                <div class="p-2">
+                    <div id="send-sms"></div>
                 </div>
             </div>
 
@@ -95,9 +98,11 @@
 </div>
 @section Scripts{
     <script src="/js/custom/contacts.js"></script>
+    <script src="~/js/custom/sms.js"></script>
     <script>
         $(function () {
             contacts.init();
+            sms.init();
         })
     </script>
     }
