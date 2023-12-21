@@ -31,5 +31,18 @@ namespace SMSData.Repository.Sms
             .AddParam("ClientId", SessionData.CurrentUser.ClientId);
             return await _db.ExecuteListAsync<TemplateNameViewModel>("spGetTemplatesName", CommandType.StoredProcedure, pram);
         }
+        public async Task<IEnumerable<SmsContactViewModel>> GetClientContactNum()
+        {
+            var pram = new DynamicParameters()
+            .AddParam("ClientId", SessionData.CurrentUser.ClientId);
+            var query = "SELECT ContactNumber FROM dbo.Client WHERE Id = @ClientId;";
+            return await _db.ExecuteListAsync<SmsContactViewModel>(query, CommandType.Text, pram);
+        }
+        public async Task<DbResponse> SaveSmsLog(SmsDataViewModel value)
+        {
+            var pram = value.PrepareDynamicParameters()
+            .AddParam("ClientId", SessionData.CurrentUser.ClientId);
+            return await _db.ExecuteNonQueryAsync("spSaveSmsLog", CommandType.StoredProcedure, pram);
+        }
     }
 }

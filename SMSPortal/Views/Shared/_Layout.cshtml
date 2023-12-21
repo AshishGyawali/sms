@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>@(ViewData["Title"] != null ? ViewData["Title"] : "SMS Portal" )  | Insouece SMS</title>
+    <title>@(ViewData["Title"] != null ? ViewData["Title"] : "SMS Portal")  | Insouece SMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template"
           name="description" />
@@ -32,7 +32,7 @@
                                 <img src="/images/theme/logo-sm.svg" alt=""
                                      height="24">
                             </span>
-                            <span class="logo-lg">
+                            <span class="logo-lg"> 
                                 <img src="/images/theme/logo-sm.svg" alt=""
                                      height="24"> <span class="logo-txt">Minia</span>
                             </span>
@@ -54,8 +54,15 @@
                             font-size-16 header-item" id="vertical-menu-btn">
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
+
+
+                    <div class="company-slogan d-none d-lg-block app-search"></div>
+
                 </div>
-                @{await Html.RenderPartialAsync("_navProfileItems");}
+
+                @{
+                    await Html.RenderPartialAsync("_navProfileItems");
+                }
             </div>
         </header>
 
@@ -109,6 +116,9 @@
     }
     <script>
         feather.replace()
+         $(function () {
+                client.init();
+        })
     </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

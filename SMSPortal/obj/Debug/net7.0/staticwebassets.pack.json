@@ -625,8 +625,16 @@
       "PackagePath": "staticwebassets\\images\\theme\\users\\avatar-9.jpg"
     },
     {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\client-company.js",
+      "PackagePath": "staticwebassets\\js\\custom\\client-company.js"
+    },
+    {
       "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\contacts.js",
       "PackagePath": "staticwebassets\\js\\custom\\contacts.js"
+    },
+    {
+      "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\custom\\dashboard.js"
     },
     {
       "Id": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\forgot-password.js",

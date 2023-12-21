@@ -91,5 +91,21 @@ namespace SMSPortal.Controllers
             var data = await _smsRepo.GetTemplateName();
             return Ok(data);
         }
+        public async Task<IActionResult> getClientContactNum()
+        {
+            var data = await _smsRepo.GetClientContactNum();
+            return Ok(data);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> saveSmsLog(SmsDataViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var response = await _smsRepo.SaveSmsLog(model);
+                return Ok(response);
+            }
+            return BadRequest(new DbResponse() { HasError = true, Message = ModelState.GetError() });
+        }
     }
 }

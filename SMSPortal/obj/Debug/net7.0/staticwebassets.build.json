@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Znof4YwrLLQOKPJ2kqqUdpWAgjb5TIkIW7z5Ncdgd7U=",
+  "Hash": "D6wGUtrhQtgguI+DLxUMIlTI+eVFgc9BzYt/DrZN504=",
   "Source": "SMSPortal",
   "BasePath": "_content/SMSPortal",
   "Mode": "Default",
@@ -2686,6 +2686,23 @@
       "OriginalItemSpec": "wwwroot\\images\\theme\\users\\avatar-9.jpg"
     },
     {
+      "Identity": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\client-company.js",
+      "SourceId": "SMSPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\",
+      "BasePath": "_content/SMSPortal",
+      "RelativePath": "js/custom/client-company.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\custom\\client-company.js"
+    },
+    {
       "Identity": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\contacts.js",
       "SourceId": "SMSPortal",
       "SourceType": "Discovered",
@@ -2701,6 +2718,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\custom\\contacts.js"
+    },
+    {
+      "Identity": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\dashboard.js",
+      "SourceId": "SMSPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\",
+      "BasePath": "_content/SMSPortal",
+      "RelativePath": "js/custom/dashboard.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\custom\\dashboard.js"
     },
     {
       "Identity": "D:\\SMSPortal\\smsportal\\SMSPortal\\wwwroot\\js\\custom\\forgot-password.js",

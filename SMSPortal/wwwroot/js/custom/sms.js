@@ -30,18 +30,19 @@
         const maxMessageLength = isUTF16 ? maxUTF16Length : max7BitLength;
 
         const maxSubsequentLength = maxMessageLength.subsequentMessages;
-        
+        //var width = (isUnicode ? (((charCountnum - 1) % 70) / 70 * 100) : (((charCountnum - 1) % 160) / 160 * 100));
         var per_message = maxMessageLength.firstMessage;
         if (text.length > per_message) {
             per_message = maxSubsequentLength;
         }
         let numParts = Math.ceil(text.length / per_message);
         var remainingCharacters = (per_message * numParts) - text.length;
+        var width = (text.length == 0) ? 0 : (per_message - remainingCharacters) / per_message * 100;
         if (remainingCharacters === 0 && numParts === 0) {
             remainingCharacters = per_message;
         }
 
-        return { numParts, remainingCharacters };
+        return { numParts, remainingCharacters, width };
 
 
     },
@@ -72,7 +73,6 @@
                     return scrollView;
                 },
                 onShowing: function (e) {
-
                     templateManager.getTemplete("SMS/send-sms").then(x => {
                         let ctx = $('#send-to');
                         var regex = /[^\u0000-\u00ff]/;
@@ -100,6 +100,11 @@
                         });
 
                         $("#number-count").append(selectedData.length);
+                        $('.correct-numbers').text('Format number');
+                        $('.correct-numbers').unbind('click').on('click', function () {
+                            var val = $('#contact-number').dxTextArea('instance').option('value');
+                            sms.formatNumber(val);
+                        });
                         $('#contact-number').dxTextArea({
                             value: contact,
                             minHeight: 90,
@@ -109,7 +114,7 @@
                             valueChangeEvent: "keyup",
                             onValueChanged: function (e) {
                                 var num = e.value;
-                                if (num) {
+                                if (num && e.event) {
                                     if (e.event.keyCode === 32) {
                                         var lastChar = num.substring(num.length - 1, num.length);
                                         if (lastChar == ' ') {
@@ -130,14 +135,14 @@
                                         var lastChar = num.substring(num.length - 1, num.length);
                                         var arr = newStr.split(',');
                                         var last = arr[arr.length - 1];
-                                        if (last.length != 10 && lastChar == ',') {
+                                        if (last.length != 10 && (lastChar == ',' || lastChar == ' ')) {
                                             arr.pop();
                                             str = arr.join(',');
                                             $('#contact-number').dxTextArea('instance').option('value', str);
                                         }
                                     }
                                     var newNum = $('#contact-number').dxTextArea('instance').option('value');
-                                    var numCount = newNum.split(',').length;
+                                    var numCount = (num.length == 0) ? 0 : newNum.split(',').length;
                                     $("#number-count").empty().append(numCount);
 
                                 }
@@ -176,13 +181,12 @@
                                 let returnObj = sms.countSmsMessage(string);
                                 $("#creditCount").html(returnObj.numParts);
                                 $("#charCount").html(returnObj.remainingCharacters);
-                                var width = (isUnicode ? (((charCountnum - 1) % 70) / 70 * 100) : (((charCountnum - 1) % 160) / 160 * 100));
-                                if (width > 90) {
+                                if (returnObj.width > 90) {
                                     $('#charProgress').addClass('bg-danger');
                                 } else {
                                     $('#charProgress').removeClass('bg-danger');
                                 }
-                                var progressWidth = width + '%';
+                                var progressWidth = returnObj.width + '%';
                                 $('#charProgress').css('width', progressWidth);
                             }
                         });
@@ -204,13 +208,22 @@
                             labelMode: "static",
 
                         });
+
                         $('#selfSms').dxCheckBox({
                             value: false,
                             text: 'Send message to me',
                             onValueChanged: function (e) {
                                 if (e.value) {
-                                    e.element.find(".dx-checkbox-text")
-                                        .html('Sending to <span class = \'text-primary\'>9867225803.</span>');
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "/sms/getclientcontactnum",
+                                        success: function (data) {
+                                            var contactNumber = (data[0].ContactNumber);
+                                            e.element.find(".dx-checkbox-text")
+                                                .html('Sending to <span class = \'text-primary contact-number-val\'>' + contactNumber + '</span>');
+                                        }
+                                    });
+
                                 }
                                 else {
                                     e.element.find(".dx-checkbox-text")
@@ -237,7 +250,7 @@
                 },
 
                 width: 550,
-                height: 610,
+                height: 645,
                 showTitle: true,
                 title: 'Send Bulk SMS',
                 visible: true,
@@ -258,18 +271,39 @@
                             e.element[0].id = "submitContact";
                         },
                         onClick() {
-                            //alert('Okay');
-                            MobileNumbers = $('#contact-number').dxTextArea('instance').option('value');
-                            Body = $('#messageBody').dxTextArea('instance').option('value');
-                            Scheduled = $('#scheduledDate').dxDateBox('instance').option('value');
+                            var contactNumber;
+                            var MobileNumbers = $('#contact-number').dxTextArea('instance').option('value');
+                            var totalNumber = parseInt($("#number-count").text());
+                            var Body = $('#messageBody').dxTextArea('instance').option('value');
+                            var Scheduled = $('#scheduledDate').dxDateBox('instance').option('value');
+                            var isSelfSending = $('#selfSms').dxCheckBox('instance').option('value');
+                            if (isSelfSending) {
+                                contactNumber = $(".contact-number-val").text();
+                                MobileNumbers = MobileNumbers + ',' + contactNumber;
+                                totalNumber = totalNumber + 1;
+                            }
+                            debugger;
                             $.ajax({
                                 type: "POST",
                                 url: "/sms/sendsms",
                                 data: { 'MobileNumbers': MobileNumbers, 'Body': Body, 'Scheduled': Scheduled },
                                 success: function (data) {
-                                    console.log('sent');
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "/sms/savesmslog",
+                                        data: { 'MsgForwardedNo': MobileNumbers, 'MsgBody': Body, 'TotalNumber': totalNumber, 'ScheduleDate': Scheduled },
+                                        success: function (data) {
+                                            console.log('saved');
+                                        },
+                                        error: function () {
+                                            showErrorMessage("Something went wrong please try again.");
+                                        }
+                                    });
+                                    showSuccessMessage("Sms sent successfully to " + totalNumber+" contacts.");
+                                    sendSMSPopup.hide();
                                 }
                             });
+                            
                         }
                     },
                 }, {
@@ -289,6 +323,41 @@
                 }
                 ],
             }).dxPopup('instance');
+        }
+    },
+
+    formatNumber: function (data) {
+        var val = data;
+        if (val) {
+            let joinedVal = val
+                .replaceAll('\n', ',')
+                .replaceAll('	', ',')
+                .replaceAll(',,', ',')
+                .replaceAll(',,,', ',')
+                .replaceAll(',,,,', ',')
+                .replaceAll(',', ',')
+                .replaceAll(' ', '').split(',');
+            joinedVal = (joinedVal.filter(str =>
+                str.trim().startsWith('9') ||
+                str.trim().startsWith('+') ||
+                str.trim().length >= 10
+            ).map(str => str.trim()));
+            // Save only unique elements
+            joinedVal = Array.from(new Set(joinedVal));
+                //.convertNumberToEnglish()
+            //joinedVal = sms.filterStrings(val);
+            //.toEnumerable().where(x =>
+            //    x.trim().startsWith('9')
+            //    || x.trim().startsWith('+')
+            //    || x.trim().length >= 10).distinct().toArray();
+            var totalNumbers = joinedVal.length;
+            $("#number-count").html(totalNumbers);
+
+            $('#contact-number').dxTextArea('instance').option('value', joinedVal.join(',').trim().replace(/,\s*$/, ""));
+        }
+        else {
+            console.log('No numbers');
+            showErrorMessage("There must me some numbers to format");
         }
     },
 
